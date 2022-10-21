@@ -1,0 +1,47 @@
+@import "./variables";
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 200px;
+  padding: $l-spacing;
+
+  .hero-main-text {
+    color: white;
+    font-weight: 300;
+    font-size: clamp(1.5rem, 3vw, 5rem);
+  }
+
+  .hero-secondary-text {
+    font-family: $secondary-font-style;
+    color: #00a3ff;
+    font-size: clamp(1rem, 1.3vw, 2rem);
+    margin-top: $s-spacing;
+  }
+
+  .hero-anim {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+
+    .hero-anim {
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container {
+    .hero-anim {
+      width: 300px;
+    }
+  }
+}

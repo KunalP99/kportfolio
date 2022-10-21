@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  background: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
+  background-attachment: fixed;
+}
+
+.app {
+  font-family: "Inter", sans-serif;
 }/*# sourceMappingURL=app.css.map */

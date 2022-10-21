@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: $header-font-colour;
   padding: $l-spacing;
+  color: $main-font-colour;
 }
 
 .logo {
@@ -15,19 +15,20 @@
 
 .navbar {
   display: flex;
+  align-items: center;
   gap: $s-spacing;
   list-style: none;
-  font-size: clamp(1rem, 1.09rem, 1.1rem);
+  font-size: clamp(1rem, 1.3rem, 1.4rem);
   text-align: center;
 }
 
 .nav-item > a {
-  color: $header-font-colour;
+  color: $main-font-colour;
   text-decoration: none;
   transition: 300ms;
 }
 .nav-item > a:hover {
-  color: #9a9a9a;
+  color: #ddd26f;
 }
 
 .hamburger-menu {
@@ -40,7 +41,7 @@
   visibility: hidden;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .navbar {
     flex-direction: column;
     height: 100vh;
@@ -50,9 +51,18 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: white;
+    background-color: #0d1219;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+
+    .close-icon {
+      visibility: visible;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      padding: $s-spacing;
+      cursor: pointer;
+    }
   }
 
   .show-navbar {
@@ -64,20 +74,12 @@
   }
 
   .nav-item > a {
-    color: black;
+    color: white;
   }
 
   .hamburger-menu {
     display: block;
     cursor: pointer;
     z-index: 100;
-  }
-
-  .close-icon {
-    visibility: visible;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    padding: $s-spacing;
   }
 }

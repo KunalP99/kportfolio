@@ -1,6 +1,6 @@
 import React from "react";
 import Menu from "../images/menu.svg";
-import Close from "../images/close.svg";
+import Close from "../images/close-icon.svg";
 
 export default function Header() {
   const openMenu = () => {

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300&display=swap");
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 200px;
+  padding: 40px;
+}
+.hero-container .hero-main-text {
+  color: white;
+  font-weight: 300;
+  font-size: clamp(1.5rem, 3vw, 5rem);
+}
+.hero-container .hero-secondary-text {
+  font-family: "Source Code Pro", monospace;
+  color: #00a3ff;
+  font-size: clamp(1rem, 1.3vw, 2rem);
+  margin-top: 24px;
+}
+.hero-container .hero-anim {
+  width: 700px;
+}
+
+@media (max-width: 1350px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .hero-container .hero-anim {
+    width: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-container .hero-anim {
+    width: 300px;
+  }
+}/*# sourceMappingURL=hero.css.map */

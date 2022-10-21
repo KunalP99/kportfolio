@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300&display=swap");
 
 // Fonts
 $font-style: "Inter", sans-serif;
+$secondary-font-style: "Source Code Pro", monospace;
 
 // Colours
 $background-colour: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
-$header-font-colour: #ffffff;
+$main-font-colour: #ffffff;
 
 // Spacing
 $xxs-spacing: 8px;
