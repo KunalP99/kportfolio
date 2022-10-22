@@ -9,7 +9,7 @@ export default function Hero() {
       </div>
       <object
         className='hero-anim'
-        data={`https://gistcdn.githack.com/KunalP99/089fccb505f8b431b4b5b6ab7d401356/raw/8ed192d88f4a760ec026dce5e8bc9dc70fa5485b/monitor-portfolio.svg`}
+        data={`https://gistcdn.githack.com/KunalP99/eae45d11d78adf77c7e031b8a6e7609a/raw/c1f37a312bf3b1bcc94461f8825570435f1f96c7/monitor-portfolio.svg`}
         type='image/svg+xml'
         aria-label='Animation'
       ></object>
