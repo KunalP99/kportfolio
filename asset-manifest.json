@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/kportfolio/static/css/main.ef4f6e3e.css",
+    "main.js": "/kportfolio/static/js/main.8f4cd1bd.js",
+    "static/media/linkedin.svg": "/kportfolio/static/media/linkedin.5341287b984a6d107657856591b0a64b.svg",
+    "static/media/github.svg": "/kportfolio/static/media/github.38caa32d830fa4294d89a82685bc88a9.svg",
+    "static/media/close-icon.svg": "/kportfolio/static/media/close-icon.3634312d3730615d6e5764f135418ccb.svg",
+    "index.html": "/kportfolio/index.html",
+    "static/media/email.svg": "/kportfolio/static/media/email.f58d2a88de0d9550e0e9784e6883f1d2.svg",
+    "static/media/arrow.svg": "/kportfolio/static/media/arrow.d59c70dee5427ff31385f95b1b5b9a69.svg",
+    "static/media/menu.svg": "/kportfolio/static/media/menu.88691c008b25e9240ac737ec05982e3a.svg",
+    "main.ef4f6e3e.css.map": "/kportfolio/static/css/main.ef4f6e3e.css.map",
+    "main.8f4cd1bd.js.map": "/kportfolio/static/js/main.8f4cd1bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef4f6e3e.css",
+    "static/js/main.8f4cd1bd.js"
+  ]
+}
