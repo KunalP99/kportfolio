@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -29,7 +34,11 @@ body {
 .logo {
   font-weight: 500;
   font-size: clamp(1.4rem, 1.6vw, 2.2rem);
-  cursor: pointer;
+}
+
+.logo > a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .navbar {
@@ -102,7 +111,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: calc(100vh - 120px);
   gap: 200px;
   padding: 40px;
 }
@@ -140,6 +149,58 @@ body {
   padding: 40px;
 }
 .projects-container h2 {
+  font-size: clamp(1.4rem, 1.6vw, 2.2rem);
   font-weight: 500;
   color: #ffffff;
+}
+
+.footer-container {
+  background-color: #0d1219;
+  height: 170px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.footer-container .btns-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-container .arrow-btn-container {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+.footer-container .arrow-btn-container .arrow-icon {
+  width: 15px;
+  transform: rotate(180deg);
+  margin-top: 24px;
+  transition: width 0.3s ease-in-out;
+}
+.footer-container .arrow-btn-container .arrow-icon:hover {
+  width: 20px;
+}
+.footer-container .social-btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+  margin-bottom: 24px;
+}
+.footer-container .social-btns-container .github-btn,
+.footer-container .social-btns-container .linkedin-btn,
+.footer-container .social-btns-container .email-btn {
+  background-color: transparent;
+  border: none;
+}
+.footer-container .social-btns-container .github-icon,
+.footer-container .social-btns-container .linkedin-icon,
+.footer-container .social-btns-container .email-icon {
+  width: 30px;
+  transition: width 0.3s ease-in-out;
+}
+.footer-container .social-btns-container .github-icon:hover,
+.footer-container .social-btns-container .linkedin-icon:hover,
+.footer-container .social-btns-container .email-icon:hover {
+  width: 40px;
 }/*# sourceMappingURL=main.css.map */

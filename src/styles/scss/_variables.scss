@@ -4,8 +4,12 @@
 $font-style: "Inter", sans-serif;
 $secondary-font-style: "Source Code Pro", monospace;
 
+// Font Sizes
+$heading-font-size: clamp(1.4rem, 1.6vw, 2.2rem);
+
 // Colours
 $background-colour: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
+$secondary-background-color: #0d1219;
 $main-font-colour: #ffffff;
 
 // Spacing
@@ -16,3 +20,10 @@ $m-spacing: 32px;
 $l-spacing: 40px;
 $xl-spacing: 48px;
 $xxl-spacing: 56px;
+
+// Mixins
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

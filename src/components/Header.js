@@ -19,7 +19,9 @@ export default function Header() {
 
   return (
     <div className='header'>
-      <h3 className='logo'>kportfolio</h3>
+      <h3 className='logo'>
+        <a href='#'>kportfolio</a>
+      </h3>
       <nav>
         <ul className='navbar'>
           <img
@@ -29,7 +31,7 @@ export default function Header() {
             alt=' Close hamburger menu'
           />
           <li className='nav-item'>
-            <a onClick={closeMenu} className='nav-link' href='#'>
+            <a onClick={closeMenu} className='nav-link' href='#projects'>
               projects
             </a>
           </li>

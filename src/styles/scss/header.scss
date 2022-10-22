@@ -9,8 +9,11 @@
 
 .logo {
   font-weight: 500;
-  font-size: clamp(1.4rem, 1.6vw, 2.2rem);
-  cursor: pointer;
+  font-size: $heading-font-size;
+}
+.logo > a {
+  text-decoration: none;
+  color: $main-font-colour;
 }
 
 .navbar {
@@ -51,7 +54,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #0d1219;
+    background-color: $secondary-background-color;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
 

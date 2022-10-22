@@ -1,0 +1,58 @@
+@import "./variables";
+
+.footer-container {
+  background-color: $secondary-background-color;
+  height: 170px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  .btns-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .arrow-btn-container {
+    margin-bottom: $s-spacing;
+    display: flex;
+    justify-content: center;
+
+    .arrow-icon {
+      width: 15px;
+      transform: rotate(180deg);
+      margin-top: $s-spacing;
+      transition: width 0.3s ease-in-out;
+    }
+    .arrow-icon:hover {
+      width: 20px;
+    }
+  }
+
+  .social-btns-container {
+    @include flexCenter;
+    gap: $l-spacing;
+    height: 100%;
+    margin-bottom: $s-spacing;
+
+    // Social Icons
+    .github-btn,
+    .linkedin-btn,
+    .email-btn {
+      background-color: transparent;
+      border: none;
+    }
+
+    .github-icon,
+    .linkedin-icon,
+    .email-icon {
+      width: 30px;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .github-icon:hover,
+    .linkedin-icon:hover,
+    .email-icon:hover {
+      width: 40px;
+    }
+  }
+}

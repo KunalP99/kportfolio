@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: auto;
   background: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
