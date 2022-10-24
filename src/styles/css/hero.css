@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300;500&display=swap");
 .hero-container {
   display: flex;
   justify-content: center;
@@ -16,6 +16,7 @@
   font-family: "Source Code Pro", monospace;
   color: #00a3ff;
   font-size: clamp(1rem, 1.3vw, 2rem);
+  font-weight: 300;
   margin-top: 24px;
 }
 .hero-container .hero-anim {

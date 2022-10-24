@@ -6,4 +6,60 @@
     font-weight: 500;
     color: $main-font-colour;
   }
+
+  .filters-container {
+    display: flex;
+    gap: $s-spacing;
+    margin-top: $xl-spacing;
+
+    .frontend-filter {
+      background-color: $active-background-colour;
+    }
+
+    .games-filter {
+      background-color: $secondary-background-colour;
+    }
+  }
+
+  .filters-container > div {
+    padding: 10px 30px;
+    color: $main-font-colour;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+  .grid-container {
+    margin-top: $xl-spacing;
+
+    .card {
+      width: 360px;
+      background-color: $secondary-background-colour;
+      padding: 20px 28px;
+      border-radius: 16px;
+
+      .card-title {
+        font-family: $secondary-font-style;
+        color: $card-title-colour;
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+
+      .card-text {
+        color: $main-font-colour;
+        font-size: 1.1rem;
+        margin-top: $xs-spacing;
+      }
+
+      .icons-container {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-top: $m-spacing;
+
+        > img {
+          width: 30px;
+        }
+      }
+    }
+  }
 }

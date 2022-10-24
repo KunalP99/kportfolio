@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Code+Pro:wght@300;500&display=swap");
 
 // Fonts
 $font-style: "Inter", sans-serif;
@@ -7,10 +7,14 @@ $secondary-font-style: "Source Code Pro", monospace;
 // Font Sizes
 $heading-font-size: clamp(1.4rem, 1.6vw, 2.2rem);
 
+// Font Colours
+$main-font-colour: #ffffff;
+$card-title-colour: #ddd26f;
+
 // Colours
 $background-colour: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
-$secondary-background-color: #0d1219;
-$main-font-colour: #ffffff;
+$secondary-background-colour: #0d1219;
+$active-background-colour: #2f9bff;
 
 // Spacing
 $xxs-spacing: 8px;
