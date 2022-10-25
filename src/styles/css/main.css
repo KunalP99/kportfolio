@@ -172,6 +172,9 @@ body {
   cursor: pointer;
 }
 .projects-container .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
   margin-top: 48px;
 }
 .projects-container .grid-container .card {
@@ -190,10 +193,12 @@ body {
   color: #ffffff;
   font-size: 1.1rem;
   margin-top: 16px;
+  height: 84px;
 }
 .projects-container .grid-container .card .icons-container {
   display: flex;
   justify-content: flex-end;
+  align-content: flex-end;
   gap: 20px;
   margin-top: 32px;
 }

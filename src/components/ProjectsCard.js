@@ -1,0 +1,42 @@
+import React from "react";
+
+export default function ProjectsCards(props) {
+  return (
+    <div className='card'>
+      <p className='card-title'>{`>` + ` ` + props.title}</p>
+      <p className='card-text'>{props.desc}</p>
+      <div className='icons-container'>
+        {props.html && (
+          <img
+            src={require(`../images/softwareIcons/${props.html}`)}
+            alt='html icon'
+          />
+        )}
+        {props.css && (
+          <img
+            src={require(`../images/softwareIcons/${props.css}`)}
+            alt='css icon'
+          />
+        )}
+        {props.sass && (
+          <img
+            src={require(`../images/softwareIcons/${props.sass}`)}
+            alt='sass icon'
+          />
+        )}
+        {props.js && (
+          <img
+            src={require(`../images/softwareIcons/${props.js}`)}
+            alt='javascript icon'
+          />
+        )}
+        {props.react && (
+          <img
+            src={require(`../images/softwareIcons/${props.react}`)}
+            alt='react icon'
+          />
+        )}
+      </div>
+    </div>
+  );
+}
