@@ -37,6 +37,20 @@ export default function ProjectsCards(props) {
             alt='react icon'
           />
         )}
+        {props.csharp && (
+          <img
+            className='csharp-icon'
+            src={require(`../images/softwareIcons/${props.csharp}`)}
+            alt='c# icon'
+          />
+        )}
+        {props.unity && (
+          <img
+            className='unity-icon'
+            src={require(`../images/softwareIcons/${props.unity}`)}
+            alt='unity icon'
+          />
+        )}
       </div>
     </div>
   );

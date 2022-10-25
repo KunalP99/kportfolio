@@ -172,13 +172,14 @@ body {
   cursor: pointer;
 }
 .projects-container .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
   margin-top: 48px;
 }
 .projects-container .grid-container .card {
-  width: 360px;
+  width: 300px;
+  flex-grow: 1;
   background-color: #0d1219;
   padding: 20px 28px;
   border-radius: 16px;
@@ -206,10 +207,34 @@ body {
 .projects-container .grid-container .card .icons-container > img {
   width: 30px;
 }
-.projects-container .grid-container .card .icons-container .sass-icon {
+.projects-container .grid-container .card .icons-container .sass-icon,
+.projects-container .grid-container .card .icons-container .csharp-icon,
+.projects-container .grid-container .card .icons-container .unity-icon {
   width: 35px;
 }
 
+@media (max-width: 920px) {
+  .projects-container h2 {
+    text-align: center;
+  }
+  .projects-container .filters-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 1600px) {
+  .grid-container {
+    padding: 24px;
+  }
+}
+@media (max-width: 490px) {
+  .projects-container {
+    padding: 0px;
+  }
+  .projects-container .card {
+    min-width: 300px;
+    justify-content: center;
+  }
+}
 .footer-container {
   background-color: #0d1219;
   height: 170px;
