@@ -17,6 +17,7 @@ export default function Projects() {
         sass={card.icons.sass}
         js={card.icons.js}
         react={card.icons.react}
+        class={card.class}
       />
     );
   });

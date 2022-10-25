@@ -7,6 +7,7 @@ const frontendInfo = [
       css: "css.svg",
       js: "js.svg",
     },
+    class: "on1-card",
     filter: "frontend",
   },
   {
@@ -18,6 +19,7 @@ const frontendInfo = [
       js: "js.svg",
       react: "react.svg",
     },
+    class: "cv-builder-card",
     filter: "frontend",
   },
   {
@@ -29,6 +31,7 @@ const frontendInfo = [
       js: "js.svg",
       react: "react.svg",
     },
+    class: "personal-portfolio-card",
     filter: "frontend",
   },
   {
@@ -39,6 +42,7 @@ const frontendInfo = [
       sass: "sass.svg",
       js: "js.svg",
     },
+    class: "weather-app",
     filter: "frontend",
   },
 ];

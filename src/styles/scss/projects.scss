@@ -37,9 +37,12 @@
     .card {
       width: 300px;
       flex-grow: 1;
-      background-color: $secondary-background-colour;
+      background: $secondary-background-colour;
       padding: 20px 28px;
       border-radius: 16px;
+      animation: animatedBackground 20s linear infinite alternate;
+      -webkit-animation: animatedBackground 20s linear infinite alternate;
+      cursor: pointer;
 
       .card-title {
         font-family: $secondary-font-style;
@@ -74,25 +77,11 @@
         }
       }
     }
+
+    .on1-card:hover {
+    }
   }
 }
-
-// // Custom scrollbar
-// .grid-container::-webkit-scrollbar {
-//   width: 1px;
-// }
-// .grid-container {
-//   scrollbar-width: thin;
-//   scrollbar-color: red blue;
-// }
-// .grid-container::-webkit-scrollbar-track {
-//   background: blue;
-//   border-radius: 16px;
-// }
-// .grid-container::-webkit-scrollbar-thumb {
-//   background-color: red;
-//   border-radius: 16px;
-// }
 
 @media (max-width: 920px) {
   .projects-container {

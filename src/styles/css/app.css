@@ -13,6 +13,19 @@ body {
   height: auto;
   background: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
   background-attachment: fixed;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0d1b30;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #313131;
 }
 
 .app {

@@ -16,6 +16,19 @@ body {
   height: auto;
   background: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
   background-attachment: fixed;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0d1b30;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #313131;
 }
 
 .app {
@@ -180,9 +193,12 @@ body {
 .projects-container .grid-container .card {
   width: 300px;
   flex-grow: 1;
-  background-color: #0d1219;
+  background: #0d1219;
   padding: 20px 28px;
   border-radius: 16px;
+  animation: animatedBackground 20s linear infinite alternate;
+  -webkit-animation: animatedBackground 20s linear infinite alternate;
+  cursor: pointer;
 }
 .projects-container .grid-container .card .card-title {
   font-family: "Source Code Pro", monospace;
@@ -212,7 +228,6 @@ body {
 .projects-container .grid-container .card .icons-container .unity-icon {
   width: 35px;
 }
-
 @media (max-width: 920px) {
   .projects-container h2 {
     text-align: center;

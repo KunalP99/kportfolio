@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ProjectsCards(props) {
   return (
-    <div className='card'>
+    <div className={`card ${props.class}`}>
       <p className='card-title'>{`>` + ` ` + props.title}</p>
       <p className='card-text'>{props.desc}</p>
       <div className='icons-container'>
