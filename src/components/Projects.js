@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectsCard from "./ProjectsCard";
 
 export default function Projects() {
@@ -11,6 +11,7 @@ export default function Projects() {
         css: "css.svg",
         js: "js.svg",
       },
+      filter: "frontend",
     },
     {
       title: "CV Builder",
@@ -21,6 +22,7 @@ export default function Projects() {
         js: "js.svg",
         react: "react.svg",
       },
+      filter: "frontend",
     },
     {
       title: "Personal Portfolio",
@@ -31,6 +33,7 @@ export default function Projects() {
         js: "js.svg",
         react: "react.svg",
       },
+      filter: "frontend",
     },
     {
       title: "Weather App",
@@ -40,12 +43,16 @@ export default function Projects() {
         sass: "sass.svg",
         js: "js.svg",
       },
+      filter: "frontend",
     },
   ];
 
-  const cardElements = cardInfo.map((card) => {
+  const [frontendFilter, setFrontendFilter] = useState("frontend");
+
+  const frontendCardElements = cardInfo.map((card) => {
     return (
       <ProjectsCard
+        key={card.title}
         title={card.title}
         desc={card.desc}
         html={card.icons.html}
@@ -57,14 +64,47 @@ export default function Projects() {
     );
   });
 
+  const gamesCardElements = cardInfo.map((card) => {
+    return (
+      <ProjectsCard
+        title={card.title}
+        desc={card.desc}
+        html={card.icons.html}
+      />
+    );
+  });
+
+  function setFilter(e) {
+    const frontendFilter = document.querySelector(".frontend-filter");
+    const gamesFilter = document.querySelector(".games-filter");
+
+    if (e.target.textContent === "Frontend") {
+      setFrontendFilter("frontend");
+      frontendFilter.style.backgroundColor = "#2F9BFF";
+      gamesFilter.style.backgroundColor = "#0d1219";
+    } else {
+      setFrontendFilter("games");
+      frontendFilter.style.backgroundColor = "#0d1219";
+      gamesFilter.style.backgroundColor = "#2F9BFF";
+    }
+  }
+
   return (
     <section id='projects' className='projects-container'>
       <h2>My Projects</h2>
       <div className='filters-container'>
-        <div className='frontend-filter active'>Frontend</div>
-        <div className='games-filter'>Games</div>
+        <div onClick={setFilter} className='frontend-filter'>
+          Frontend
+        </div>
+        <div onClick={setFilter} className='games-filter'>
+          Games
+        </div>
       </div>
-      <div className='grid-container'>{cardElements}</div>
+      <div className='grid-container'>
+        {frontendFilter === "frontend"
+          ? frontendCardElements
+          : gamesCardElements}
+      </div>
     </section>
   );
 }

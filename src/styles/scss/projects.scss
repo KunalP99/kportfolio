@@ -52,6 +52,7 @@
         font-size: 1.1rem;
         margin-top: $xs-spacing;
         height: 84px;
+        font-weight: 300;
       }
 
       .icons-container {
@@ -63,6 +64,10 @@
 
         > img {
           width: 30px;
+        }
+
+        .sass-icon {
+          width: 35px;
         }
       }
     }

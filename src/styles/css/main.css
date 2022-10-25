@@ -194,6 +194,7 @@ body {
   font-size: 1.1rem;
   margin-top: 16px;
   height: 84px;
+  font-weight: 300;
 }
 .projects-container .grid-container .card .icons-container {
   display: flex;
@@ -204,6 +205,9 @@ body {
 }
 .projects-container .grid-container .card .icons-container > img {
   width: 30px;
+}
+.projects-container .grid-container .card .icons-container .sass-icon {
+  width: 35px;
 }
 
 .footer-container {

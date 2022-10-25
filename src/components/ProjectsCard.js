@@ -20,6 +20,7 @@ export default function ProjectsCards(props) {
         )}
         {props.sass && (
           <img
+            className='sass-icon'
             src={require(`../images/softwareIcons/${props.sass}`)}
             alt='sass icon'
           />
