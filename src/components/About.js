@@ -3,28 +3,35 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import "swiper/swiper-bundle.css";
 import "swiper/css/autoplay";
-import AboutImage1 from "../images/about-image-1.jpg";
-import AboutImage2 from "../images/about-image-2.jpg";
 
 // Only uses the modules it needs by declaring them here
 SwiperCore.use([Pagination, Autoplay]);
 
 export default function About() {
   // All images are put into slides array and then displayed in Swiper
-  const slides = [
-    <SwiperSlide key={"slide-1"}>
-      <img className='slide slide-1' src={AboutImage1} />
-    </SwiperSlide>,
-    <SwiperSlide key={"slide-2"}>
-      <img className='slide slide-2' src={AboutImage2} />
-    </SwiperSlide>,
-  ];
+  const slides = [];
+
+  // Pushes a new SwiperSlide componenet into the array to display in the DOM
+  for (let i = 1; i < 5; i++) {
+    slides.push(
+      <SwiperSlide key={`slide-${i}`}>
+        <img
+          className={`slide slide-${i}`}
+          src={require(`../images/about-image-${i}.jpg`)}
+          alt={`Slider scene ${i}`}
+        />
+      </SwiperSlide>
+    );
+  }
+
+  console.log(slides);
 
   return (
     <section id='about' className='about-container'>
       <h2>About me</h2>
       <div className='about-content'>
         <div>
+          {/* Swiper componenet. Added autoplay and loop so pictures change automatically */}
           <Swiper
             id='swiper'
             pagination
