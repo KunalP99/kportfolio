@@ -13,10 +13,6 @@
       border-radius: 16px;
       padding-bottom: 30px !important;
 
-      // .swiper-container {
-      //   padding-bottom: 35px;
-      // }
-
       .swiper-pagination {
         background-color: $secondary-background-colour;
         padding: 3px;
@@ -49,8 +45,47 @@
     p {
       color: $main-font-colour;
       font-size: $p-font-size;
-      // top right bottom left
       padding: 0px 200px 30px 200px;
+    }
+  }
+}
+
+@media (max-width: 1358px) {
+  .about-container {
+    .about-content {
+      p {
+        padding: 0px 10px 30px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .about-container {
+    h2 {
+      text-align: center;
+    }
+    .about-content {
+      flex-direction: column-reverse;
+
+      #swiper {
+        margin-top: $xl-spacing;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .about-container {
+    .about-content {
+      #swiper {
+        width: 300px;
+        height: 400px;
+      }
+
+      p {
+        padding: 0px 0px 30px 0px;
+      }
     }
   }
 }

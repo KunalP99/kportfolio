@@ -231,7 +231,7 @@ h2 {
   width: 35px;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1080px) {
   .projects-container h2 {
     text-align: center;
   }
@@ -300,6 +300,31 @@ h2 {
   padding: 0px 200px 30px 200px;
 }
 
+@media (max-width: 1358px) {
+  .about-container .about-content p {
+    padding: 0px 10px 30px 10px;
+  }
+}
+@media (max-width: 1080px) {
+  .about-container h2 {
+    text-align: center;
+  }
+  .about-container .about-content {
+    flex-direction: column-reverse;
+  }
+  .about-container .about-content #swiper {
+    margin-top: 48px;
+  }
+}
+@media (max-width: 450px) {
+  .about-container .about-content #swiper {
+    width: 300px;
+    height: 400px;
+  }
+  .about-container .about-content p {
+    padding: 0px 0px 30px 0px;
+  }
+}
 .footer-container {
   background-color: #0d1219;
   height: 170px;
