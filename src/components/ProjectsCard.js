@@ -51,6 +51,13 @@ export default function ProjectsCards(props) {
             alt='unity icon'
           />
         )}
+        {props.photoshop && (
+          <img
+            className='photoshop-icon'
+            src={require(`../images/softwareIcons/${props.photoshop}`)}
+            alt='photoshop icon'
+          />
+        )}
       </div>
     </div>
   );

@@ -30,6 +30,7 @@ export default function Projects() {
         desc={card.desc}
         csharp={card.icons.csharp}
         unity={card.icons.unity}
+        photoshop={card.icons.photoshop}
       />
     );
   });

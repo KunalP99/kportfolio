@@ -1,11 +1,5 @@
 .projects-container {
-  padding: $l-spacing;
-
-  h2 {
-    font-size: $heading-font-size;
-    font-weight: 500;
-    color: $main-font-colour;
-  }
+  padding: $xxl-spacing;
 
   .filters-container {
     display: flex;
@@ -72,13 +66,11 @@
 
         .sass-icon,
         .csharp-icon,
-        .unity-icon {
+        .unity-icon,
+        .photoshop-icon {
           width: 35px;
         }
       }
-    }
-
-    .on1-card:hover {
     }
   }
 }

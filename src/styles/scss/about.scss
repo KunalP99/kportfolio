@@ -1,0 +1,56 @@
+.about-container {
+  padding: $xxl-spacing;
+
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: $xl-spacing;
+
+    #swiper {
+      width: 450px;
+      height: 550px;
+      border-radius: 16px;
+      padding-bottom: 30px !important;
+
+      // .swiper-container {
+      //   padding-bottom: 35px;
+      // }
+
+      .swiper-pagination {
+        background-color: $secondary-background-colour;
+        padding: 3px;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: white;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $active-background-colour !important;
+      }
+
+      .slide {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .slide-1 {
+        object-position: bottom;
+      }
+
+      .slide-2 {
+        object-position: 25% 10%;
+      }
+    }
+
+    p {
+      color: $main-font-colour;
+      font-size: $p-font-size;
+      // top right bottom left
+      padding: 0px 200px 30px 200px;
+    }
+  }
+}

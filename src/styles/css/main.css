@@ -35,6 +35,12 @@ body::-webkit-scrollbar-thumb {
   font-family: "Inter", sans-serif;
 }
 
+h2 {
+  font-size: clamp(1.4rem, 1.6vw, 2.2rem);
+  font-weight: 500;
+  color: #ffffff;
+}
+
 .header {
   font-family: "Inter", sans-serif;
   display: flex;
@@ -160,12 +166,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .projects-container {
-  padding: 40px;
-}
-.projects-container h2 {
-  font-size: clamp(1.4rem, 1.6vw, 2.2rem);
-  font-weight: 500;
-  color: #ffffff;
+  padding: 56px;
 }
 .projects-container .filters-container {
   display: flex;
@@ -225,9 +226,11 @@ body::-webkit-scrollbar-thumb {
 }
 .projects-container .grid-container .card .icons-container .sass-icon,
 .projects-container .grid-container .card .icons-container .csharp-icon,
-.projects-container .grid-container .card .icons-container .unity-icon {
+.projects-container .grid-container .card .icons-container .unity-icon,
+.projects-container .grid-container .card .icons-container .photoshop-icon {
   width: 35px;
 }
+
 @media (max-width: 920px) {
   .projects-container h2 {
     text-align: center;
@@ -250,6 +253,53 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
   }
 }
+.about-container {
+  padding: 56px;
+}
+.about-container .about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+.about-container .about-content #swiper {
+  width: 450px;
+  height: 550px;
+  border-radius: 16px;
+  padding-bottom: 30px !important;
+}
+.about-container .about-content #swiper .swiper-pagination {
+  background-color: #0d1219;
+  padding: 3px;
+}
+.about-container .about-content #swiper .swiper-pagination-bullet {
+  background-color: white;
+}
+.about-container .about-content #swiper .swiper-pagination-bullet-active {
+  background-color: #2f9bff !important;
+}
+.about-container .about-content #swiper .slide {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.about-container .about-content #swiper .slide-1 {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.about-container .about-content #swiper .slide-2 {
+  -o-object-position: 25% 10%;
+     object-position: 25% 10%;
+}
+.about-container .about-content p {
+  color: #ffffff;
+  font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+  padding: 0px 200px 30px 200px;
+}
+
 .footer-container {
   background-color: #0d1219;
   height: 170px;

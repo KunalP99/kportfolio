@@ -32,3 +32,9 @@ body::-webkit-scrollbar-thumb {
 .app {
   font-family: $font-style;
 }
+
+h2 {
+  font-size: $heading-font-size;
+  font-weight: 500;
+  color: $main-font-colour;
+}
