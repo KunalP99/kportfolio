@@ -6,6 +6,7 @@ import gamesInfo from "../information/gamesInfo";
 export default function Projects() {
   const [frontendFilter, setFrontendFilter] = useState("frontend");
 
+  // Mapping over each object in frontendInfo and mapping each prop to data from that object
   const frontendCardElements = frontendInfo.map((card) => {
     return (
       <ProjectsCard

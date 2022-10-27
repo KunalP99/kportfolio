@@ -1,0 +1,33 @@
+.skills-container {
+  padding: $xl-spacing;
+
+  .skills-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $xs-spacing;
+    margin-top: $xl-spacing;
+  }
+}
+
+@media (max-width: 1080px) {
+  .skills-container {
+    h2 {
+      text-align: center;
+    }
+    .skills-icon-container {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .skills-container {
+    .skills-icon-container {
+      .skills-icon {
+        width: 100px;
+      }
+    }
+  }
+}

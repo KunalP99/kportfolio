@@ -325,6 +325,60 @@ h2 {
     padding: 0px 0px 30px 0px;
   }
 }
+.skills-container {
+  padding: 48px;
+}
+.skills-container .skills-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+@media (max-width: 1080px) {
+  .skills-container h2 {
+    text-align: center;
+  }
+  .skills-container .skills-icon-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 420px) {
+  .skills-container .skills-icon-container .skills-icon {
+    width: 100px;
+  }
+}
+.quotes-container {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.quotes-container .quotes-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-style: italic;
+}
+.quotes-container .quotes-box {
+  background: linear-gradient(112.55deg, rgba(0, 0, 0, 0.6) 4.78%, rgba(0, 0, 0, 0.6) 4.79%, rgba(111, 111, 111, 0.08) 96.21%);
+  color: white;
+  width: 60%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 48px;
+}
+.quotes-container .quotes-box .quote {
+  font-style: italic;
+}
+
 .footer-container {
   background-color: #0d1219;
   height: 170px;
