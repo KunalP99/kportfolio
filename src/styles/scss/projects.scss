@@ -1,5 +1,6 @@
 .projects-container {
   padding: $xxl-spacing;
+  width: auto;
 
   .filters-container {
     display: flex;
@@ -28,15 +29,18 @@
     gap: $m-spacing;
     margin-top: $xl-spacing;
 
+    a {
+      text-decoration: none;
+    }
+
     .card {
       width: 300px;
       flex-grow: 1;
       background: $secondary-background-colour;
       padding: 20px 28px;
       border-radius: 16px;
-      animation: animatedBackground 20s linear infinite alternate;
-      -webkit-animation: animatedBackground 20s linear infinite alternate;
       cursor: pointer;
+      transition: 300ms ease-in-out;
 
       .card-title {
         font-family: $secondary-font-style;
@@ -71,6 +75,10 @@
           width: 35px;
         }
       }
+    }
+
+    .card:hover {
+      background: $active-background-colour;
     }
   }
 }

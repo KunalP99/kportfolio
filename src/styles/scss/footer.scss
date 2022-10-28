@@ -3,7 +3,16 @@
 .footer-container {
   background-color: $secondary-background-colour;
   height: 170px;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  // Centers the element as it is position: absolute
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 
   .btns-container {
     height: 100%;

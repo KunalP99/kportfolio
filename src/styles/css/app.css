@@ -10,10 +10,14 @@ html {
 }
 
 body {
-  height: auto;
   background: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
   background-attachment: fixed;
   scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {

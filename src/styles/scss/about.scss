@@ -8,10 +8,11 @@
     margin-top: $xl-spacing;
 
     #swiper {
-      width: 450px;
-      height: 550px;
+      width: 550px;
+      height: 650px;
       border-radius: 16px;
       padding-bottom: 30px !important;
+      z-index: 1;
 
       .swiper-pagination {
         background-color: $secondary-background-colour;
@@ -46,12 +47,12 @@
       color: $main-font-colour;
       font-size: $p-font-size;
       padding: 0px 200px 30px 200px;
-      width: 1000px;
+      width: 1250px;
     }
   }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1850px) {
   .about-container {
     .about-content {
       p {
@@ -77,8 +78,9 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .about-container {
+    padding: $xs-spacing;
     .about-content {
       #swiper {
         width: 300px;
@@ -87,6 +89,7 @@
 
       p {
         padding: 0px 0px 30px 0px;
+        width: 100%;
       }
     }
   }

@@ -8,7 +8,7 @@ import FigmaIcon from "../images/skills/figma-skill.svg";
 
 export default function Skills() {
   return (
-    <section className='skills-container'>
+    <section id='skills' className='skills-container'>
       <h2>My skills</h2>
       <div className='skills-icon-container'>
         <img className='skills-icon' src={HtmlIcon} alt='HTML icon' />

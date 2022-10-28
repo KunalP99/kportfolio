@@ -11,10 +11,16 @@ html {
 }
 
 body {
-  height: auto;
   background: $background-colour;
   background-attachment: fixed;
   scrollbar-width: thin;
+
+  // When user zooms out, keeps everything positioned correctly
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 // Custom scrollbar

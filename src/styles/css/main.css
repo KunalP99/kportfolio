@@ -13,10 +13,14 @@ html {
 }
 
 body {
-  height: auto;
   background: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
   background-attachment: fixed;
   scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -102,6 +106,7 @@ h2 {
     background-color: #0d1219;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    z-index: 2;
   }
   .navbar .close-icon {
     visibility: visible;
@@ -167,6 +172,7 @@ h2 {
 }
 .projects-container {
   padding: 56px;
+  width: auto;
 }
 .projects-container .filters-container {
   display: flex;
@@ -191,15 +197,17 @@ h2 {
   gap: 32px;
   margin-top: 48px;
 }
+.projects-container .grid-container a {
+  text-decoration: none;
+}
 .projects-container .grid-container .card {
   width: 300px;
   flex-grow: 1;
   background: #0d1219;
   padding: 20px 28px;
   border-radius: 16px;
-  animation: animatedBackground 20s linear infinite alternate;
-  -webkit-animation: animatedBackground 20s linear infinite alternate;
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 .projects-container .grid-container .card .card-title {
   font-family: "Source Code Pro", monospace;
@@ -229,6 +237,9 @@ h2 {
 .projects-container .grid-container .card .icons-container .unity-icon,
 .projects-container .grid-container .card .icons-container .photoshop-icon {
   width: 35px;
+}
+.projects-container .grid-container .card:hover {
+  background: #2f9bff;
 }
 
 @media (max-width: 1080px) {
@@ -263,10 +274,11 @@ h2 {
   margin-top: 48px;
 }
 .about-container .about-content #swiper {
-  width: 450px;
-  height: 550px;
+  width: 550px;
+  height: 650px;
   border-radius: 16px;
   padding-bottom: 30px !important;
+  z-index: 1;
 }
 .about-container .about-content #swiper .swiper-pagination {
   background-color: #0d1219;
@@ -298,10 +310,10 @@ h2 {
   color: #ffffff;
   font-size: clamp(1.2rem, 1.4vw, 1.4rem);
   padding: 0px 200px 30px 200px;
-  width: 1000px;
+  width: 1250px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1850px) {
   .about-container .about-content p {
     width: auto;
     padding: 0px 30px 30px 30px;
@@ -318,13 +330,17 @@ h2 {
     margin-top: 48px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 600px) {
+  .about-container {
+    padding: 16px;
+  }
   .about-container .about-content #swiper {
     width: 300px;
     height: 400px;
   }
   .about-container .about-content p {
     padding: 0px 0px 30px 0px;
+    width: 100%;
   }
 }
 .skills-container {
@@ -347,7 +363,7 @@ h2 {
     justify-content: center;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 487px) {
   .skills-container .skills-icon-container .skills-icon {
     width: 100px;
   }
@@ -410,9 +426,16 @@ h2 {
   }
 }
 .footer-container {
+  position: absolute;
   background-color: #0d1219;
   height: 170px;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 .footer-container .btns-container {
   height: 100%;

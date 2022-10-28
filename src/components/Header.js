@@ -41,13 +41,8 @@ export default function Header() {
             </a>
           </li>
           <li className='nav-item'>
-            <a onClick={closeMenu} className='nav-link' href='#'>
-              journey
-            </a>
-          </li>
-          <li className='nav-item'>
-            <a onClick={closeMenu} className='nav-link' href='#'>
-              contact
+            <a onClick={closeMenu} className='nav-link' href='#skills'>
+              skills
             </a>
           </li>
         </ul>

@@ -57,6 +57,7 @@
     background-color: $secondary-background-colour;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    z-index: 2;
 
     .close-icon {
       visibility: visible;
