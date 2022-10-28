@@ -5,6 +5,10 @@
   align-items: center;
   width: 100%;
 
+  h2 {
+    text-align: center;
+  }
+
   .quotes-heading {
     display: flex;
     flex-direction: column;
@@ -42,6 +46,27 @@
 
     .author {
       margin-top: $s-spacing;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .quotes-container {
+    .quotes-box {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .quotes-container {
+    .quotes-box {
+      padding-top: $xs-spacing;
+      padding-bottom: $xs-spacing;
+
+      .quote {
+        font-size: 0.9rem;
+      }
     }
   }
 }

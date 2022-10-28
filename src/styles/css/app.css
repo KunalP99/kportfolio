@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h2 {
-  font-size: clamp(1.4rem, 1.6vw, 2.2rem);
+  font-size: clamp(1.7rem, 1.6vw, 2.2rem);
   font-weight: 500;
   color: #ffffff;
 }/*# sourceMappingURL=app.css.map */

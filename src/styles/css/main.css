@@ -36,7 +36,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h2 {
-  font-size: clamp(1.4rem, 1.6vw, 2.2rem);
+  font-size: clamp(1.7rem, 1.6vw, 2.2rem);
   font-weight: 500;
   color: #ffffff;
 }
@@ -52,7 +52,7 @@ h2 {
 
 .logo {
   font-weight: 500;
-  font-size: clamp(1.4rem, 1.6vw, 2.2rem);
+  font-size: clamp(1.7rem, 1.6vw, 2.2rem);
 }
 
 .logo > a {
@@ -137,12 +137,12 @@ h2 {
 .hero-container .hero-main-text {
   color: white;
   font-weight: 300;
-  font-size: clamp(1.5rem, 3vw, 5rem);
+  font-size: clamp(1.9rem, 3vw, 5rem);
 }
 .hero-container .hero-secondary-text {
   font-family: "Source Code Pro", monospace;
   color: #00a3ff;
-  font-size: clamp(1rem, 1.3vw, 2rem);
+  font-size: clamp(0.9rem, 1.3vw, 2rem);
   font-weight: 300;
   margin-top: 24px;
 }
@@ -359,6 +359,9 @@ h2 {
   align-items: center;
   width: 100%;
 }
+.quotes-container h2 {
+  text-align: center;
+}
 .quotes-container .quotes-heading {
   display: flex;
   flex-direction: column;
@@ -392,6 +395,20 @@ h2 {
   margin-top: 24px;
 }
 
+@media (max-width: 1080px) {
+  .quotes-container .quotes-box {
+    width: auto;
+  }
+}
+@media (max-width: 420px) {
+  .quotes-container .quotes-box {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .quotes-container .quotes-box .quote {
+    font-size: 0.9rem;
+  }
+}
 .footer-container {
   background-color: #0d1219;
   height: 170px;
