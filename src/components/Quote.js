@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LeftQuote from "../images/left-quote.svg";
+import RefreshQuote from "../images/refresh-quote.svg";
 
 export default function Quote() {
   const [quote, setQuote] = useState({});
@@ -7,8 +8,16 @@ export default function Quote() {
   useEffect(() => {
     fetch("http://api.quotable.io/random")
       .then((response) => response.json())
-      .then((data) => setQuote(data));
+      .then((data) => setQuote(data))
+      .catch((error) => console.log(error));
   }, []);
+
+  // Fetch new quote on button click
+  function newQuote() {
+    fetch("http://api.quotable.io/random")
+      .then((response) => response.json())
+      .then((data) => setQuote(data));
+  }
 
   return (
     <section className='quotes-container'>
@@ -19,6 +28,7 @@ export default function Quote() {
       <div className='quotes-box'>
         <div className='quote'>{`"${quote.content}"`}</div>
         <div className='author'>- {quote.author}</div>
+        <img onClick={newQuote} src={RefreshQuote} alt='Refresh quote' />
       </div>
     </section>
   );

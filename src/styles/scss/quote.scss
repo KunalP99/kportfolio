@@ -36,16 +36,26 @@
     margin-top: $xl-spacing;
     border: 2.76895px solid #00a3ff;
     border-radius: 16px;
-    padding: $l-spacing;
 
     .quote {
       text-align: center;
       font-style: italic;
       font-size: 1.2rem;
+      padding: 30px 30px 0px 30px;
     }
 
     .author {
       margin-top: $s-spacing;
+    }
+
+    > img {
+      width: 40px;
+      cursor: pointer;
+      margin-top: $s-spacing;
+      transition: 300ms ease-in-out;
+    }
+    > img:hover {
+      transform: rotate(360deg);
     }
   }
 }

@@ -288,7 +288,7 @@ h2 {
   background-color: white;
 }
 .about-container .about-content #swiper .swiper-pagination-bullet-active {
-  background-color: #2f9bff !important;
+  background-color: #ee256d !important;
 }
 .about-container .about-content #swiper .slide {
   width: 100%;
@@ -400,15 +400,24 @@ h2 {
   margin-top: 48px;
   border: 2.76895px solid #00a3ff;
   border-radius: 16px;
-  padding: 40px;
 }
 .quotes-container .quotes-box .quote {
   text-align: center;
   font-style: italic;
   font-size: 1.2rem;
+  padding: 30px 30px 0px 30px;
 }
 .quotes-container .quotes-box .author {
   margin-top: 24px;
+}
+.quotes-container .quotes-box > img {
+  width: 40px;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: 300ms ease-in-out;
+}
+.quotes-container .quotes-box > img:hover {
+  transform: rotate(360deg);
 }
 
 @media (max-width: 1080px) {
@@ -426,11 +435,11 @@ h2 {
   }
 }
 .footer-container {
-  position: absolute;
   background-color: #0d1219;
   height: 170px;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
