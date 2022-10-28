@@ -1,6 +1,16 @@
 .skills-container {
   padding: $xl-spacing;
 
+  h2 {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+  }
+  .show-header {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
   .skills-icon-container {
     display: flex;
     justify-content: space-between;
@@ -8,6 +18,50 @@
     flex-wrap: wrap;
     gap: $xs-spacing;
     margin-top: $xl-spacing;
+  }
+
+  .html-skills-icon,
+  .css-skills-icon,
+  .sass-skills-icon,
+  .js-skills-icon,
+  .react-skills-icon,
+  .figma-skills-icon {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  .html-skills-icon {
+    transition: 1s ease-in-out;
+  }
+  .css-skills-icon {
+    transition: 1s ease-in-out;
+    transition-delay: 250ms;
+  }
+  .sass-skills-icon {
+    transition: 1s ease-in-out;
+    transition-delay: 500ms;
+  }
+  .js-skills-icon {
+    transition: 1s ease-in-out;
+    transition-delay: 750ms;
+  }
+  .react-skills-icon {
+    transition: 1s ease-in-out;
+    transition-delay: 1s;
+  }
+  .figma-skills-icon {
+    transition: 1s ease-in-out;
+    transition-delay: 1.25s;
+  }
+
+  .show-html,
+  .show-css,
+  .show-sass,
+  .show-js,
+  .show-react,
+  .show-figma {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 

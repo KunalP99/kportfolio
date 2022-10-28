@@ -12,6 +12,7 @@
     color: white;
     font-weight: 300;
     font-size: clamp(1.9rem, 3vw, 5rem);
+    animation: fadeInFromTop 1s ease-in-out;
   }
 
   .hero-secondary-text {
@@ -20,6 +21,7 @@
     font-size: clamp(0.9rem, 1.3vw, 2rem);
     font-weight: 300;
     margin-top: $s-spacing;
+    animation: fadeInFromBottom 1s ease-in-out;
   }
 
   .hero-anim {
@@ -44,5 +46,27 @@
     .hero-anim {
       width: 300px;
     }
+  }
+}
+
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }

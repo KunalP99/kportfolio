@@ -1,6 +1,16 @@
 .about-container {
   padding: $xxl-spacing;
 
+  h2 {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 1s ease-in-out;
+  }
+  .show-header {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
   .about-content {
     display: flex;
     justify-content: center;
@@ -48,6 +58,14 @@
       font-size: $p-font-size;
       padding: 0px 200px 30px 200px;
       width: 1250px;
+      opacity: 0;
+      transform: translateX(60px);
+      transition: 700ms ease-in-out;
+    }
+
+    .show-paragraph {
+      opacity: 1;
+      transform: translateX(0px);
     }
   }
 }

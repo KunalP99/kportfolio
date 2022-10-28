@@ -1,8 +1,19 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function ProjectsCards(props) {
+  const { ref: cardRef, inView: cardIsVisible } = useInView({
+    threshold: 1.0,
+    triggerOnce: true,
+  });
+
   return (
-    <a className={`card ${props.class}`} href={props.url} target={props.target}>
+    <a
+      ref={cardRef}
+      className={`card ${props.class} ${cardIsVisible ? "show-card" : ""}`}
+      href={props.url}
+      target={props.target}
+    >
       <div>
         <p className='card-title'>{`>` + ` ` + props.title}</p>
         <p className='card-text'>{props.desc}</p>

@@ -1,10 +1,26 @@
 import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import ProjectsCard from "./ProjectsCard";
 import frontendInfo from "../information/frontendInfo";
 import gamesInfo from "../information/gamesInfo";
 
 export default function Projects() {
   const [frontendFilter, setFrontendFilter] = useState("frontend");
+
+  // React hook which is the same as intersection observer
+  const { ref: headingRef, inView: headerIsVisible } = useInView({
+    triggerOnce: "true",
+  });
+
+  const { ref: frontendFilterRef, inView: frontendFilterIsVisible } = useInView(
+    {
+      triggerOnce: "true",
+    }
+  );
+
+  const { ref: gamesFilterRef, inView: gamesFilterIsVisible } = useInView({
+    triggerOnce: "true",
+  });
 
   // Mapping over each object in frontendInfo and mapping each prop to data from that object
   const frontendCardElements = frontendInfo.map((card) => {
@@ -55,12 +71,29 @@ export default function Projects() {
 
   return (
     <section id='projects' className='projects-container'>
-      <h2>My Projects</h2>
+      <h2
+        className={`${headerIsVisible ? "show-header" : ""}`}
+        ref={headingRef}
+      >
+        My Projects
+      </h2>
       <div className='filters-container'>
-        <div onClick={setFilter} className='frontend-filter'>
+        <div
+          onClick={setFilter}
+          ref={frontendFilterRef}
+          className={`frontend-filter ${
+            frontendFilterIsVisible ? "show-frontend-filter" : ""
+          }`}
+        >
           Frontend
         </div>
-        <div onClick={setFilter} className='games-filter'>
+        <div
+          onClick={setFilter}
+          ref={gamesFilterRef}
+          className={`games-filter ${
+            gamesFilterIsVisible ? "show-games-filter" : ""
+          }`}
+        >
           Games
         </div>
       </div>
