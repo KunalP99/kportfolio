@@ -46,15 +46,17 @@
       color: $main-font-colour;
       font-size: $p-font-size;
       padding: 0px 200px 30px 200px;
+      width: 1000px;
     }
   }
 }
 
-@media (max-width: 1358px) {
+@media (max-width: 1500px) {
   .about-container {
     .about-content {
       p {
-        padding: 0px 10px 30px 10px;
+        width: auto;
+        padding: 0px 30px 30px 30px;
       }
     }
   }

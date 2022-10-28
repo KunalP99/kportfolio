@@ -24,8 +24,6 @@ export default function About() {
     );
   }
 
-  console.log(slides);
-
   return (
     <section id='about' className='about-container'>
       <h2>About me</h2>

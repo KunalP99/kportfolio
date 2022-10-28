@@ -11,6 +11,10 @@
     align-items: center;
     gap: $xs-spacing;
     font-style: italic;
+
+    > img {
+      width: 40px;
+    }
   }
 
   .quotes-box {
@@ -21,14 +25,23 @@
       rgba(111, 111, 111, 0.08) 96.21%
     );
     color: white;
-    width: 60%;
-    height: 300px;
+    width: 1000px;
+    height: 200px;
     @include flexCenter;
     flex-direction: column;
     margin-top: $xl-spacing;
+    border: 2.76895px solid #00a3ff;
+    border-radius: 16px;
+    padding: $l-spacing;
 
     .quote {
+      text-align: center;
       font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    .author {
+      margin-top: $s-spacing;
     }
   }
 }

@@ -298,11 +298,13 @@ h2 {
   color: #ffffff;
   font-size: clamp(1.2rem, 1.4vw, 1.4rem);
   padding: 0px 200px 30px 200px;
+  width: 1000px;
 }
 
-@media (max-width: 1358px) {
+@media (max-width: 1500px) {
   .about-container .about-content p {
-    padding: 0px 10px 30px 10px;
+    width: auto;
+    padding: 0px 30px 30px 30px;
   }
 }
 @media (max-width: 1080px) {
@@ -364,19 +366,30 @@ h2 {
   gap: 16px;
   font-style: italic;
 }
+.quotes-container .quotes-heading > img {
+  width: 40px;
+}
 .quotes-container .quotes-box {
   background: linear-gradient(112.55deg, rgba(0, 0, 0, 0.6) 4.78%, rgba(0, 0, 0, 0.6) 4.79%, rgba(111, 111, 111, 0.08) 96.21%);
   color: white;
-  width: 60%;
-  height: 300px;
+  width: 1000px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 48px;
+  border: 2.76895px solid #00a3ff;
+  border-radius: 16px;
+  padding: 40px;
 }
 .quotes-container .quotes-box .quote {
+  text-align: center;
   font-style: italic;
+  font-size: 1.2rem;
+}
+.quotes-container .quotes-box .author {
+  margin-top: 24px;
 }
 
 .footer-container {
