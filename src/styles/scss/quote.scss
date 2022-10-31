@@ -92,8 +92,16 @@
 @media (max-width: 1080px) {
   .quotes-container {
     .quotes-box {
-      width: auto;
+      width: 700px;
       height: auto;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .quotes-container {
+    .quotes-box {
+      width: auto;
     }
   }
 }

@@ -13,13 +13,10 @@ html {
 body {
   background: $background-colour;
   background-attachment: fixed;
-  scrollbar-width: thin;
 
   // When user zooms out, keeps everything positioned correctly
-  display: flex;
+  @include flexCenter;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   overflow-x: hidden;
 }
 

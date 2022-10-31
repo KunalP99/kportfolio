@@ -54,7 +54,7 @@
       text-decoration: none;
     }
 
-    .card {
+    .card-container {
       width: 300px;
       flex-grow: 1;
       background: $secondary-background-colour;
@@ -63,9 +63,10 @@
       cursor: pointer;
       transition: 300ms ease-in-out, transform 1s ease-in-out,
         opacity 1s ease-in-out;
-      opacity: 0;
       transform: translateY(30px);
+    }
 
+    .card {
       .card-title {
         font-family: $secondary-font-style;
         color: $card-title-colour;
@@ -106,7 +107,7 @@
       opacity: 1;
     }
 
-    .card:hover {
+    .card-container:hover {
       box-shadow: #2f9bff 6px 2px 50px 1px;
       margin-top: -10px;
     }

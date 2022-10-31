@@ -9,6 +9,7 @@ const frontendInfo = [
     },
     class: "on1-card",
     filter: "frontend",
+    to: "/on1-project",
   },
   {
     title: "CV Builder",

@@ -12,11 +12,10 @@ html {
 body {
   background: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
   background-attachment: fixed;
-  scrollbar-width: thin;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   overflow-x: hidden;
 }
 

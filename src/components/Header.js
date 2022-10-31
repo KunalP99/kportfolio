@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Menu from "../images/menu.svg";
 import Close from "../images/close-icon.svg";
 
@@ -20,7 +21,7 @@ export default function Header() {
   return (
     <div className='header'>
       <h3 className='logo'>
-        <a href='#'>kportfolio</a>
+        <Link to='/kportfolio'>kportfolio</Link>
       </h3>
       <nav>
         <ul className='navbar'>

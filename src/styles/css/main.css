@@ -15,11 +15,10 @@ html {
 body {
   background: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
   background-attachment: fixed;
-  scrollbar-width: thin;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   overflow-x: hidden;
 }
 
@@ -264,7 +263,7 @@ h2 {
 .projects-container .grid-container a {
   text-decoration: none;
 }
-.projects-container .grid-container .card {
+.projects-container .grid-container .card-container {
   width: 300px;
   flex-grow: 1;
   background: #0d1219;
@@ -272,7 +271,6 @@ h2 {
   border-radius: 16px;
   cursor: pointer;
   transition: 300ms ease-in-out, transform 1s ease-in-out, opacity 1s ease-in-out;
-  opacity: 0;
   transform: translateY(30px);
 }
 .projects-container .grid-container .card .card-title {
@@ -308,7 +306,7 @@ h2 {
   transform: translateY(0px);
   opacity: 1;
 }
-.projects-container .grid-container .card:hover {
+.projects-container .grid-container .card-container:hover {
   box-shadow: #2f9bff 6px 2px 50px 1px;
   margin-top: -10px;
 }
@@ -373,7 +371,7 @@ h2 {
   background-color: white;
 }
 .about-container .about-content #swiper .swiper-pagination-bullet-active {
-  background-color: #ee256d !important;
+  background-color: #2f9bff !important;
 }
 .about-container .about-content #swiper .slide {
   width: 100%;
@@ -593,8 +591,13 @@ h2 {
 
 @media (max-width: 1080px) {
   .quotes-container .quotes-box {
-    width: auto;
+    width: 700px;
     height: auto;
+  }
+}
+@media (max-width: 750px) {
+  .quotes-container .quotes-box {
+    width: auto;
   }
 }
 @media (max-width: 420px) {
@@ -606,6 +609,10 @@ h2 {
     font-size: 0.9rem;
   }
 }
+.on1-project-container h3 {
+  padding: 48px;
+}
+
 .footer-container {
   background-color: #0d1219;
   height: 170px;

@@ -7,7 +7,7 @@ export default function Quote() {
   const [quote, setQuote] = useState({});
 
   useEffect(() => {
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.quotable.io/random")
       .then((response) => response.json())
       .then((data) => setQuote(data))
       .catch((error) => console.log(error));
@@ -15,7 +15,7 @@ export default function Quote() {
 
   // Fetch new quote on button click
   function newQuote() {
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.quotable.io/random")
       .then((response) => response.json())
       .then((data) => setQuote(data))
       .catch((error) => console.log(error));
@@ -71,7 +71,7 @@ export default function Quote() {
           className={`author ${authorIsVisible ? "show-author" : ""}`}
           ref={authorRef}
         >
-          - {quote.author}
+          {quote.author}
         </div>
         <img onClick={newQuote} src={RefreshQuote} alt='Refresh quote' />
       </div>
