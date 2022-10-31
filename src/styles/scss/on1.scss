@@ -1,5 +1,14 @@
 .on1-project-container {
   h3 {
     padding: $xl-spacing;
+    text-align: center;
+  }
+
+  .on1-project-header {
+    text-align: center;
+
+    .project-year {
+      color: #ddd26f;
+    }
   }
 }

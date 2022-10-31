@@ -269,9 +269,10 @@ h2 {
   background: #0d1219;
   padding: 20px 28px;
   border-radius: 16px;
-  cursor: pointer;
-  transition: 300ms ease-in-out, transform 1s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0;
   transform: translateY(30px);
+  transition: 300ms ease-in-out, transform 1s ease-in-out, opacity 1s ease-in-out;
+  cursor: pointer;
 }
 .projects-container .grid-container .card .card-title {
   font-family: "Source Code Pro", monospace;
@@ -611,6 +612,13 @@ h2 {
 }
 .on1-project-container h3 {
   padding: 48px;
+  text-align: center;
+}
+.on1-project-container .on1-project-header {
+  text-align: center;
+}
+.on1-project-container .on1-project-header .project-year {
+  color: #ddd26f;
 }
 
 .footer-container {

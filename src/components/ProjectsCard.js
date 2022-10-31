@@ -9,11 +9,11 @@ export default function ProjectsCards(props) {
   });
   // Since gamesInfo is the only dataset to have url as a prop, all gamesInfo will be wrapped around an a tag while all frontendInfo will be wrapped around a Link tag so that those pages can be redirected to a new page using react router
   return (
-    <div className='card-container'>
+    <div className={`card-container ${cardIsVisible ? "show-card" : ""}`}>
       {props.url ? (
         <a
           ref={cardRef}
-          className={`card ${props.class} ${cardIsVisible ? "show-card" : ""}`}
+          className={`card ${props.class}`}
           href={props.url}
           target={props.target}
         >
@@ -48,7 +48,7 @@ export default function ProjectsCards(props) {
       ) : (
         <Link
           ref={cardRef}
-          className={`card ${props.class} ${cardIsVisible ? "show-card" : ""}`}
+          className={`card ${props.class}`}
           to={props.to}
           target={props.target}
         >
@@ -85,27 +85,6 @@ export default function ProjectsCards(props) {
                 <img
                   src={require(`../images/softwareIcons/${props.react}`)}
                   alt='react icon'
-                />
-              )}
-              {props.csharp && (
-                <img
-                  className='csharp-icon'
-                  src={require(`../images/softwareIcons/${props.csharp}`)}
-                  alt='c# icon'
-                />
-              )}
-              {props.unity && (
-                <img
-                  className='unity-icon'
-                  src={require(`../images/softwareIcons/${props.unity}`)}
-                  alt='unity icon'
-                />
-              )}
-              {props.photoshop && (
-                <img
-                  className='photoshop-icon'
-                  src={require(`../images/softwareIcons/${props.photoshop}`)}
-                  alt='photoshop icon'
                 />
               )}
             </div>
