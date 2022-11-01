@@ -1,12 +1,9 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import "swiper/swiper-bundle.css";
 import "swiper/css/autoplay";
-
-// Only uses the modules it needs by declaring them here
-SwiperCore.use([Pagination, Autoplay]);
 
 export default function About() {
   const { ref: headingRef, inView: headerIsVisible } = useInView({
@@ -46,6 +43,7 @@ export default function About() {
         <div>
           {/* Swiper componenet. Added autoplay and loop so pictures change automatically */}
           <Swiper
+            modules={[Pagination, Autoplay]}
             id='swiper'
             pagination
             autoplay={{ delay: 6000, disableOnInteraction: false }}

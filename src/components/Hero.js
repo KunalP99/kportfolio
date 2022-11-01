@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className='hero-container'>
+    <section className='hero-container'>
       <div>
         <h1 className='hero-main-text'>Hi, I'm Kunal Patel</h1>
         <p className='hero-secondary-text'>{`> Aspiring Frontend Developer`}</p>
@@ -13,6 +13,6 @@ export default function Hero() {
         type='image/svg+xml'
         aria-label='Animation'
       ></object>
-    </div>
+    </section>
   );
 }

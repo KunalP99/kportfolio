@@ -7,6 +7,7 @@ $secondary-font-style: "Source Code Pro", monospace;
 // Font Sizes
 $heading-font-size: clamp(1.7rem, 1.6vw, 2.2rem);
 $p-font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+$project-heading-font-size: clamp(2rem, 2.6vw, 3.5rem);
 
 // Font Colours
 $main-font-colour: #ffffff;
@@ -16,6 +17,7 @@ $card-title-colour: #ddd26f;
 $background-colour: linear-gradient(147.36deg, #0d1b30 0%, #222223 100%);
 $secondary-background-colour: #0d1219;
 $active-background-colour: #2f9bff;
+$project-btn-colour: #ee256d;
 
 // Spacing
 $xxs-spacing: 8px;
@@ -34,7 +36,7 @@ $xxl-spacing: 56px;
 }
 
 @mixin visitWebsiteBtn {
-  background-color: #ee256d;
+  background-color: $project-btn-colour;
   padding: 10px 45px;
   border-radius: 16px;
   font-size: 1.1rem;
@@ -50,4 +52,8 @@ $xxl-spacing: 56px;
   font-size: 1.1rem;
   font-weight: 500;
   border: none;
+}
+
+@mixin nextProjectBtn {
+  
 }

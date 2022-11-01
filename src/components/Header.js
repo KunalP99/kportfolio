@@ -19,7 +19,7 @@ export default function Header() {
   };
 
   return (
-    <div className='header'>
+    <section className='header'>
       <h3 className='logo'>
         <Link to='/kportfolio'>kportfolio</Link>
       </h3>
@@ -54,6 +54,6 @@ export default function Header() {
           alt='Hamburger menu'
         />
       </nav>
-    </div>
+    </section>
   );
 }

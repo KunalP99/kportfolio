@@ -6,7 +6,7 @@ import EmailIcon from "../images/socialIcons/email.svg";
 
 export default function Footer() {
   return (
-    <div className='footer-container'>
+    <section className='footer-container'>
       <div className='btns-container'>
         <div className='arrow-btn-container'>
           <a href='#'>
@@ -51,6 +51,6 @@ export default function Footer() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

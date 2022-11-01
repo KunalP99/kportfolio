@@ -1,0 +1,221 @@
+.project-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+  h3 {
+    text-align: center;
+    padding: $xl-spacing;
+  }
+
+  .project-header {
+    padding: $xl-spacing;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .project-year {
+      color: #ddd26f;
+      margin-bottom: $xs-spacing;
+    }
+
+    .project-title {
+      font-weight: 500;
+      font-size: $project-heading-font-size;
+    }
+
+    .h1-tag-text {
+      color: #ee256d;
+    }
+    .slash-sign {
+      color: white;
+    }
+
+    .project-description {
+      font-size: $p-font-size;
+      margin-top: $xl-spacing;
+      width: 1000px;
+      text-align: center;
+    }
+
+    .projects-btn-container {
+      margin-top: $m-spacing;
+      display: flex;
+      justify-content: center;
+
+      .visit-website-btn {
+        @include visitWebsiteBtn;
+        transition: 300ms ease-in-out;
+      }
+      .visit-website-btn:hover {
+        background-color: #84173d;
+      }
+
+      .visit-website-btn > a {
+        text-decoration: none;
+        color: $main-font-colour;
+      }
+    }
+  }
+
+  .swiper-container {
+    margin-bottom: 100px;
+
+    #project-swiper {
+      width: 1500px;
+      border-radius: 16px;
+      padding-bottom: 30px;
+      z-index: 1;
+      margin-top: $xl-spacing;
+
+      .swiper-pagination {
+        background-color: $secondary-background-colour;
+        padding: 10px;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: white;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $active-background-colour !important;
+      }
+    }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .made-with-container {
+    padding: $xl-spacing;
+
+    h2 {
+      text-align: center;
+      font-size: $heading-font-size;
+    }
+
+    .project-icon-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 90px;
+      margin-top: $xl-spacing;
+    }
+  }
+
+  .next-project-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: $m-spacing;
+    margin-bottom: $m-spacing;
+
+    button {
+      background-color: $project-btn-colour;
+      border-radius: 16px;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.3rem;
+      transition: 300ms ease-in-out;
+
+      img {
+        width: 30px;
+      }
+    }
+    button > a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $main-font-colour;
+      gap: $xs-spacing;
+    }
+    button:hover {
+      background-color: #84173d;
+    }
+  }
+}
+
+@media (max-width: 1900px) {
+  .project-container {
+    .swiper-container {
+      #project-swiper {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .project-container {
+    .project-header {
+      .project-description {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .project-container {
+    .project-header {
+      .project-year {
+        text-align: center;
+      }
+      .project-title {
+        text-align: center;
+      }
+      .project-description {
+        text-align: center;
+      }
+
+      .projects-btn-container {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .swiper-container {
+      #project-swiper {
+        width: 93%;
+        .swiper-pagination {
+          padding: 2px;
+        }
+      }
+    }
+
+    .made-with-container {
+      padding: $xl-spacing;
+
+      h2 {
+        text-align: center;
+        font-size: $heading-font-size;
+      }
+
+      .project-icon-container > img {
+        width: 100px;
+      }
+    }
+
+    .next-project-btn-container {
+      justify-content: center;
+      margin-right: 0px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .project-container {
+    .project-header {
+      .project-title {
+        font-size: 1.3rem;
+      }
+      .project-description {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

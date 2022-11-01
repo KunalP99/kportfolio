@@ -12,9 +12,7 @@
   }
 
   .about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     margin-top: $xl-spacing;
 
     #swiper {
