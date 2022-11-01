@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kportfolio/static/css/main.c70a06a8.css",
-    "main.js": "/kportfolio/static/js/main.7150c60d.js",
+    "main.css": "/kportfolio/static/css/main.c90ff17c.css",
+    "main.js": "/kportfolio/static/js/main.58a8937a.js",
     "static/media/about-image-2.jpg": "/kportfolio/static/media/about-image-2.b5ccf37471caf20db8d9.jpg",
     "static/media/about-image-4.jpg": "/kportfolio/static/media/about-image-4.6bf001a915b9975940ee.jpg",
     "static/media/about-image-3.jpg": "/kportfolio/static/media/about-image-3.7b8fbfaef000a702da9b.jpg",
@@ -11,10 +11,16 @@
     "static/media/on1-image-5.png": "/kportfolio/static/media/on1-image-5.9fdee6e307e59c4038bd.png",
     "static/media/on1-image-1.png": "/kportfolio/static/media/on1-image-1.72f93997719f573f3532.png",
     "static/media/on1-image-4.png": "/kportfolio/static/media/on1-image-4.025fda4844ca5d0ccf44.png",
+    "static/media/library-image-3.png": "/kportfolio/static/media/library-image-3.ae35c7ab5e03ad64cbf6.png",
+    "static/media/weather-image-3.png": "/kportfolio/static/media/weather-image-3.325565046fd07003719b.png",
     "static/media/cv-image-4.png": "/kportfolio/static/media/cv-image-4.7c3e921f18582138d760.png",
+    "static/media/weather-image-1.png": "/kportfolio/static/media/weather-image-1.f50d5e8d4b76266b0a67.png",
+    "static/media/weather-image-2.png": "/kportfolio/static/media/weather-image-2.73f8180c4c8a2f64d8b5.png",
     "static/media/cv-image-3.png": "/kportfolio/static/media/cv-image-3.6db6e4263035a34e885c.png",
     "static/media/cv-image-2.png": "/kportfolio/static/media/cv-image-2.4005dd743a9f03824629.png",
     "static/media/cv-image-1.png": "/kportfolio/static/media/cv-image-1.ae92f3ab7e593b085bab.png",
+    "static/media/library-image-1.png": "/kportfolio/static/media/library-image-1.95a76415eb28bf69dbbd.png",
+    "static/media/library-image-2.png": "/kportfolio/static/media/library-image-2.ef823cd685abaf16c977.png",
     "static/media/sass-skill.svg": "/kportfolio/static/media/sass-skill.4480a0606c629273f8b110568638b310.svg",
     "static/media/sass.svg": "/kportfolio/static/media/sass.60b23c2f096728f1595c.svg",
     "static/media/react-skill.svg": "/kportfolio/static/media/react-skill.67acc2d638aa9b6419328d1869fcc536.svg",
@@ -39,11 +45,11 @@
     "static/media/refresh-quote.svg": "/kportfolio/static/media/refresh-quote.2b9f48cab96e36a89bfd6cf957dd3441.svg",
     "static/media/arrow.svg": "/kportfolio/static/media/arrow.d119920fbc6115dec91897e61cf01808.svg",
     "static/media/menu.svg": "/kportfolio/static/media/menu.88691c008b25e9240ac737ec05982e3a.svg",
-    "main.c70a06a8.css.map": "/kportfolio/static/css/main.c70a06a8.css.map",
-    "main.7150c60d.js.map": "/kportfolio/static/js/main.7150c60d.js.map"
+    "main.c90ff17c.css.map": "/kportfolio/static/css/main.c90ff17c.css.map",
+    "main.58a8937a.js.map": "/kportfolio/static/js/main.58a8937a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c70a06a8.css",
-    "static/js/main.7150c60d.js"
+    "static/css/main.c90ff17c.css",
+    "static/js/main.58a8937a.js"
   ]
 }
