@@ -46,6 +46,19 @@ const frontendInfo = [
     },
     class: "weather-app",
     filter: "frontend",
+    to: "/weather-app",
+  },
+  {
+    title: "Library App",
+    desc: "An app that allows the user to keep track of books that they want to read or have read already.",
+    icons: {
+      html: "html.svg",
+      css: "css.svg",
+      js: "js.svg",
+    },
+    class: "library-app",
+    filter: "frontend",
+    to: "/library-app",
   },
 ];
 

@@ -631,6 +631,7 @@ button {
   align-items: center;
 }
 .project-container .project-header .project-year {
+  font-size: 1.3rem;
   color: #ddd26f;
   margin-bottom: 16px;
 }

@@ -7,18 +7,17 @@ import "swiper/css/autoplay";
 import HtmlIcon from "../../images/skills/html-skill.svg";
 import SassIcon from "../../images/skills/sass-skill.svg";
 import JsIcon from "../../images/skills/js-skill.svg";
-import ReactIcon from "../../images/skills/react-skill.svg";
 import NextBtn from "../../images/next-project.svg";
 
-export default function CvBuilder() {
+export default function WeatherProject() {
   const slides = [];
 
-  for (let i = 1; i < 5; i++) {
+  for (let i = 1; i < 4; i++) {
     slides.push(
-      <SwiperSlide key={`cv-slide-${i}`}>
+      <SwiperSlide key={`weather-slide-${i}`}>
         <img
           className={`slide slide-${i}`}
-          src={require(`../../images/project/cv/cv-image-${i}.png`)}
+          src={require(`../../images/project/weather/weather-image-${i}.png`)}
           alt={`Slider scene ${i}`}
         />
       </SwiperSlide>
@@ -35,16 +34,15 @@ export default function CvBuilder() {
           <p className='project-year'>2022</p>
           <h1 className='project-title'>
             <span className='h1-tag-text'>{`<h1>`}</span>
-            {` CV Builder`} <span className='h1-tag-text'>{`<`}</span>
+            {` Weather App`} <span className='h1-tag-text'>{`<`}</span>
             <span className='slash-sign'>{`/`}</span>
             <span span className='h1-tag-text'>{`h1>`}</span>
           </h1>
           <div>
             <p className='project-description'>
-              This CV builder website allows you to enter your information into
-              the forms, which then updates the CV with the information you have
-              typed in. This was my first React project that I created, and it
-              taught me a lot about how to code and think in React.
+              A weather app that fetches data from an API. By searching up a
+              city name, it will grab the latitude and longitude coordinates,
+              and from there, display the relevant data on the screen.
             </p>
             <div className='projects-btn-container'>
               <a
@@ -57,7 +55,7 @@ export default function CvBuilder() {
               </a>
               <a
                 className='github-btn'
-                href='https://github.com/KunalP99/cv-projectV2'
+                href='https://github.com/KunalP99/weather-app'
                 target={"_blank"}
                 rel='noreferrer'
               >
@@ -83,12 +81,11 @@ export default function CvBuilder() {
             <img src={HtmlIcon} alt='HTML icon' />
             <img src={SassIcon} alt='Sass icon' />
             <img src={JsIcon} alt='JavaScript icon' />
-            <img src={ReactIcon} alt='React icon' />
           </div>
         </div>
       </div>
       <div className='next-project-btn-container'>
-        <Link className='next-project-btn' to='/weather-app'>
+        <Link className='next-project-btn' to='/library-app'>
           Next project <img src={NextBtn} alt='Next project' />
         </Link>
       </div>
