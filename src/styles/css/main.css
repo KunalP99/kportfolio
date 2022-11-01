@@ -654,6 +654,7 @@ button {
   margin-top: 32px;
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 .project-container .project-header .projects-btn-container .visit-website-btn {
   background-color: #ee256d;
@@ -662,14 +663,26 @@ button {
   font-size: 1.1rem;
   font-weight: 500;
   border: none;
+  text-decoration: none;
+  color: #ffffff;
   transition: 300ms ease-in-out;
 }
 .project-container .project-header .projects-btn-container .visit-website-btn:hover {
   background-color: #84173d;
 }
-.project-container .project-header .projects-btn-container .visit-website-btn > a {
+.project-container .project-header .projects-btn-container .github-btn {
+  background-color: white;
+  color: #ee256d;
+  padding: 10px 45px;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
   text-decoration: none;
-  color: #ffffff;
+  transition: 300ms ease-in-out;
+}
+.project-container .project-header .projects-btn-container .github-btn:hover {
+  background-color: #b4b4b4;
 }
 .project-container .swiper-container {
   margin-bottom: 100px;
@@ -718,26 +731,25 @@ button {
   justify-content: flex-end;
   margin-right: 32px;
   margin-bottom: 32px;
+  margin-top: 32px;
 }
-.project-container .next-project-btn-container button {
-  background-color: #ee256d;
-  border-radius: 16px;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1.3rem;
-  transition: 300ms ease-in-out;
-}
-.project-container .next-project-btn-container button img {
-  width: 30px;
-}
-.project-container .next-project-btn-container button > a {
+.project-container .next-project-btn-container .next-project-btn {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #ffffff;
   gap: 16px;
+  background-color: #ee256d;
+  border-radius: 16px;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.3rem;
+  transition: 300ms ease-in-out;
 }
-.project-container .next-project-btn-container button:hover {
+.project-container .next-project-btn-container .next-project-btn img {
+  width: 30px;
+}
+.project-container .next-project-btn-container .next-project-btn:hover {
   background-color: #84173d;
 }
 
@@ -783,7 +795,7 @@ button {
   }
   .project-container .next-project-btn-container {
     justify-content: center;
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 @media (max-width: 450px) {

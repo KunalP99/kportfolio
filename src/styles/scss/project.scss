@@ -43,18 +43,24 @@
       margin-top: $m-spacing;
       display: flex;
       justify-content: center;
+      gap: 10px;
 
       .visit-website-btn {
         @include visitWebsiteBtn;
+        text-decoration: none;
+        color: $main-font-colour;
         transition: 300ms ease-in-out;
       }
       .visit-website-btn:hover {
         background-color: #84173d;
       }
 
-      .visit-website-btn > a {
-        text-decoration: none;
-        color: $main-font-colour;
+      .github-btn {
+        @include githubBtn;
+        transition: 300ms ease-in-out;
+      }
+      .github-btn:hover {
+        background-color: #b4b4b4;
       }
     }
   }
@@ -113,27 +119,17 @@
     justify-content: flex-end;
     margin-right: $m-spacing;
     margin-bottom: $m-spacing;
+    margin-top: $m-spacing;
 
-    button {
-      background-color: $project-btn-colour;
-      border-radius: 16px;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1.3rem;
+    .next-project-btn {
+      @include nextProjectBtn;
       transition: 300ms ease-in-out;
 
       img {
         width: 30px;
       }
     }
-    button > a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: $main-font-colour;
-      gap: $xs-spacing;
-    }
-    button:hover {
+    .next-project-btn:hover {
       background-color: #84173d;
     }
   }
@@ -202,7 +198,7 @@
 
     .next-project-btn-container {
       justify-content: center;
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }

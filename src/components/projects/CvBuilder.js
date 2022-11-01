@@ -5,19 +5,20 @@ import { Pagination, Autoplay } from "swiper";
 import "swiper/swiper-bundle.css";
 import "swiper/css/autoplay";
 import HtmlIcon from "../../images/skills/html-skill.svg";
-import CssIcon from "../../images/skills/css-skill.svg";
+import SassIcon from "../../images/skills/sass-skill.svg";
 import JsIcon from "../../images/skills/js-skill.svg";
+import ReactIcon from "../../images/skills/react-skill.svg";
 import NextBtn from "../../images/next-project.svg";
 
-export default function On1Project() {
+export default function CvBuilder() {
   const slides = [];
 
-  for (let i = 1; i < 6; i++) {
+  for (let i = 1; i < 5; i++) {
     slides.push(
-      <SwiperSlide key={`on1-slide-${i}`}>
+      <SwiperSlide key={`cv-slide-${i}`}>
         <img
           className={`slide slide-${i}`}
-          src={require(`../../images/project/on1/on1-image-${i}.png`)}
+          src={require(`../../images/project/cv/cv-image-${i}.png`)}
           alt={`Slider scene ${i}`}
         />
       </SwiperSlide>
@@ -34,20 +35,16 @@ export default function On1Project() {
           <p className='project-year'>2022</p>
           <h1 className='project-title'>
             <span className='h1-tag-text'>{`<h1>`}</span>
-            {` On1 Solutions`} <span className='h1-tag-text'>{`<`}</span>
+            {` CV Builder`} <span className='h1-tag-text'>{`<`}</span>
             <span className='slash-sign'>{`/`}</span>
             <span span className='h1-tag-text'>{`h1>`}</span>
           </h1>
           <div>
             <p className='project-description'>
-              On1 Solutions is a start-up company, focused on automating the
-              process of business notifications to allow for easier and more
-              reliable communications between employees and managers. The goal
-              for me was to completely redesign/redevelop the website that they
-              had already started creating, using GoDaddy. Due to the
-              limitations of using this hosting platform, the client wanted more
-              than just default templates, which I was able to help with using
-              code.
+              This CV builder website allows you to enter your information into
+              the forms, which then updates the CV with the information you have
+              typed in. This was my first React project that I created, and it
+              taught me a lot about how to code and think in React.
             </p>
             <div className='projects-btn-container'>
               <a
@@ -57,6 +54,14 @@ export default function On1Project() {
                 rel='noreferrer'
               >
                 Visit website
+              </a>
+              <a
+                className='github-btn'
+                href='https://github.com/KunalP99/cv-projectV2'
+                target={"_blank"}
+                rel='noreferrer'
+              >
+                GitHub
               </a>
             </div>
           </div>
@@ -76,12 +81,14 @@ export default function On1Project() {
           <h2>Made with:</h2>
           <div className='project-icon-container'>
             <img src={HtmlIcon} alt='HTML icon' />
-            <img src={CssIcon} alt='CSS icon' />
+            <img src={SassIcon} alt='Sass icon' />
             <img src={JsIcon} alt='JavaScript icon' />
+            <img src={ReactIcon} alt='React icon' />
           </div>
         </div>
       </div>
       <div className='next-project-btn-container'>
+        {/* May need to change a tag to Link tag */}
         <Link className='next-project-btn' to='/cv-builder'>
           Next project <img src={NextBtn} alt='Next project' />
         </Link>

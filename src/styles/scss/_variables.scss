@@ -52,8 +52,18 @@ $xxl-spacing: 56px;
   font-size: 1.1rem;
   font-weight: 500;
   border: none;
+  text-decoration: none;
 }
 
 @mixin nextProjectBtn {
-  
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $main-font-colour;
+  gap: $xs-spacing;
+  background-color: $project-btn-colour;
+  border-radius: 16px;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.3rem;
 }

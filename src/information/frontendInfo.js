@@ -22,6 +22,7 @@ const frontendInfo = [
     },
     class: "cv-builder-card",
     filter: "frontend",
+    to: "/cv-builder",
   },
   {
     title: "Personal Portfolio",
