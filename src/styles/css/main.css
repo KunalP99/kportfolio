@@ -44,6 +44,10 @@ h2 {
   color: #ffffff;
 }
 
+button {
+  cursor: pointer;
+}
+
 .header {
   font-family: "Inter", sans-serif;
   display: flex;
@@ -610,15 +614,53 @@ h2 {
     font-size: 0.9rem;
   }
 }
+.on1-project-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
 .on1-project-container h3 {
-  padding: 48px;
   text-align: center;
+  padding: 48px;
 }
 .on1-project-container .on1-project-header {
-  text-align: center;
+  padding: 48px;
 }
 .on1-project-container .on1-project-header .project-year {
   color: #ddd26f;
+  margin-bottom: 16px;
+}
+.on1-project-container .on1-project-header .project-title {
+  font-weight: 500;
+  font-size: clamp(1.7rem, 1.6vw, 2.2rem);
+}
+.on1-project-container .on1-project-header .project-title > span {
+  color: #ee256d;
+}
+.on1-project-container .on1-project-header .project-description {
+  font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+  margin-top: 48px;
+  width: 900px;
+}
+.on1-project-container .on1-project-header .projects-btn-container {
+  margin-top: 32px;
+}
+.on1-project-container .on1-project-header .projects-btn-container .visit-website-btn {
+  background-color: #ee256d;
+  padding: 10px 45px;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  transition: 300ms ease-in-out;
+}
+.on1-project-container .on1-project-header .projects-btn-container .visit-website-btn:hover {
+  background-color: #84173d;
+}
+.on1-project-container .on1-project-header .projects-btn-container .visit-website-btn > a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .footer-container {

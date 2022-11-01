@@ -39,4 +39,8 @@ h2 {
   font-size: clamp(1.7rem, 1.6vw, 2.2rem);
   font-weight: 500;
   color: #ffffff;
+}
+
+button {
+  cursor: pointer;
 }/*# sourceMappingURL=app.css.map */

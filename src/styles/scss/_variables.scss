@@ -32,3 +32,22 @@ $xxl-spacing: 56px;
   justify-content: center;
   align-items: center;
 }
+
+@mixin visitWebsiteBtn {
+  background-color: #ee256d;
+  padding: 10px 45px;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+}
+
+@mixin githubBtn {
+  background-color: white;
+  color: #ee256d;
+  padding: 10px 45px;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+}
