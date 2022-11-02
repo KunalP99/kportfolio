@@ -38,7 +38,7 @@ const frontendInfo = [
   },
   {
     title: "Weather App",
-    desc: "Fetching data from an API; I display the information in an meaningful way while allowing the user to search up different cities weather.",
+    desc: "Fetching data from an API; I display the information in a meaningful way while allowing the user to search up different cities weather.",
     icons: {
       html: "html.svg",
       sass: "sass.svg",

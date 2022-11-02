@@ -48,7 +48,7 @@ export default function LibraryApp() {
             <div className='projects-btn-container'>
               <a
                 className='visit-website-btn'
-                href='https://on1solutions.com/'
+                href='https://kunalp99.github.io/library/'
                 target={"_blank"}
                 rel='noreferrer'
               >

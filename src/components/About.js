@@ -62,7 +62,7 @@ export default function About() {
           </p>
           <p className={`${paragraphIsVisible ? "show-paragraph" : ""}`}>
             I was intrigued by the ins and outs of developing a website and
-            didn’t realise how much went into creating one. So I decided to
+            didn’t realise how much went into creating one. So, I decided to
             pursue this field instead.
           </p>
           <p className={`${paragraphIsVisible ? "show-paragraph" : ""}`}>
@@ -71,7 +71,7 @@ export default function About() {
             and started implementing Sass into my projects.
           </p>
           <p className={`${paragraphIsVisible ? "show-paragraph" : ""}`}>
-            It’s been a challenging yet enjoyable experience and i’m eager to
+            It’s been a challenging yet enjoyable experience and I’m eager to
             learn and develop more.
           </p>
         </div>

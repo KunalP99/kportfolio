@@ -49,7 +49,7 @@ export default function CvBuilder() {
             <div className='projects-btn-container'>
               <a
                 className='visit-website-btn'
-                href='https://on1solutions.com/'
+                href='https://kunalp99.github.io/cv-projectV2/'
                 target={"_blank"}
                 rel='noreferrer'
               >

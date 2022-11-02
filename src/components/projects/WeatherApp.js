@@ -47,7 +47,7 @@ export default function WeatherProject() {
             <div className='projects-btn-container'>
               <a
                 className='visit-website-btn'
-                href='https://on1solutions.com/'
+                href='https://kunalp99.github.io/weather-app/'
                 target={"_blank"}
                 rel='noreferrer'
               >
