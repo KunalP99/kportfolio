@@ -18,7 +18,7 @@ export default function ProjectsCards(props) {
           target={props.target}
         >
           <div>
-            <p className='card-title'>{`> ${props.title}`}</p>
+            <p className='card-title'>{`> ${props.title}`}</p> 
             <p className='card-text'>{props.desc}</p>
             <div className='icons-container'>
               {props.csharp && (

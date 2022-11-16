@@ -204,7 +204,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 451px) {
   .project-container {
     .project-header {
       .project-title {
@@ -212,6 +212,17 @@
       }
       .project-description {
         font-size: 0.9rem;
+      }
+      .projects-btn-container {
+        .visit-website-btn {
+          font-size: 0.9rem;
+          padding: 5px 20px;
+        }
+
+        .github-btn {
+          font-size: 0.9rem;
+          padding: 5px 20px;
+        }
       }
     }
   }

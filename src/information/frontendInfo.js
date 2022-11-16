@@ -35,6 +35,8 @@ const frontendInfo = [
     },
     class: "personal-portfolio-card",
     filter: "frontend",
+    path: "https://github.com/KunalP99/kportfolio",
+    target: "_blank",
   },
   {
     title: "Weather App",

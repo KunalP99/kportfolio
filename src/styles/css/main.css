@@ -799,12 +799,20 @@ button {
     margin-right: 0;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 451px) {
   .project-container .project-header .project-title {
     font-size: 1.3rem;
   }
   .project-container .project-header .project-description {
     font-size: 0.9rem;
+  }
+  .project-container .project-header .projects-btn-container .visit-website-btn {
+    font-size: 0.9rem;
+    padding: 5px 20px;
+  }
+  .project-container .project-header .projects-btn-container .github-btn {
+    font-size: 0.9rem;
+    padding: 5px 20px;
   }
 }
 .footer-container {
