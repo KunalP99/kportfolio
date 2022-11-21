@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kportfolio/static/css/main.5154aa14.css",
-    "main.js": "/kportfolio/static/js/main.485cb53c.js",
+    "main.js": "/kportfolio/static/js/main.13833e67.js",
     "static/media/about-image-2.jpg": "/kportfolio/static/media/about-image-2.b5ccf37471caf20db8d9.jpg",
     "static/media/about-image-4.jpg": "/kportfolio/static/media/about-image-4.6bf001a915b9975940ee.jpg",
     "static/media/about-image-3.jpg": "/kportfolio/static/media/about-image-3.7b8fbfaef000a702da9b.jpg",
@@ -12,10 +12,12 @@
     "static/media/on1-image-1.png": "/kportfolio/static/media/on1-image-1.72f93997719f573f3532.png",
     "static/media/on1-image-4.png": "/kportfolio/static/media/on1-image-4.025fda4844ca5d0ccf44.png",
     "static/media/library-image-3.png": "/kportfolio/static/media/library-image-3.ae35c7ab5e03ad64cbf6.png",
-    "static/media/weather-image-3.png": "/kportfolio/static/media/weather-image-3.325565046fd07003719b.png",
     "static/media/cv-image-4.png": "/kportfolio/static/media/cv-image-4.7c3e921f18582138d760.png",
-    "static/media/weather-image-1.png": "/kportfolio/static/media/weather-image-1.f50d5e8d4b76266b0a67.png",
-    "static/media/weather-image-2.png": "/kportfolio/static/media/weather-image-2.73f8180c4c8a2f64d8b5.png",
+    "static/media/weather-image-3.png": "/kportfolio/static/media/weather-image-3.c40617d0cd5b20bc77ca.png",
+    "static/media/weather-image-1.png": "/kportfolio/static/media/weather-image-1.87a0c28603e66d2acb70.png",
+    "static/media/weather-image-4.png": "/kportfolio/static/media/weather-image-4.61e998a486f2dd0fd1f7.png",
+    "static/media/weather-image-2.png": "/kportfolio/static/media/weather-image-2.4a4ea2de850b2943647f.png",
+    "static/media/weather-image-5.png": "/kportfolio/static/media/weather-image-5.d7a3a4f68b76fc564633.png",
     "static/media/cv-image-3.png": "/kportfolio/static/media/cv-image-3.6db6e4263035a34e885c.png",
     "static/media/cv-image-2.png": "/kportfolio/static/media/cv-image-2.4005dd743a9f03824629.png",
     "static/media/cv-image-1.png": "/kportfolio/static/media/cv-image-1.ae92f3ab7e593b085bab.png",
@@ -46,10 +48,10 @@
     "static/media/arrow.svg": "/kportfolio/static/media/arrow.d119920fbc6115dec91897e61cf01808.svg",
     "static/media/menu.svg": "/kportfolio/static/media/menu.88691c008b25e9240ac737ec05982e3a.svg",
     "main.5154aa14.css.map": "/kportfolio/static/css/main.5154aa14.css.map",
-    "main.485cb53c.js.map": "/kportfolio/static/js/main.485cb53c.js.map"
+    "main.13833e67.js.map": "/kportfolio/static/js/main.13833e67.js.map"
   },
   "entrypoints": [
     "static/css/main.5154aa14.css",
-    "static/js/main.485cb53c.js"
+    "static/js/main.13833e67.js"
   ]
 }
