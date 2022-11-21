@@ -7,12 +7,13 @@ import "swiper/css/autoplay";
 import HtmlIcon from "../../images/skills/html-skill.svg";
 import SassIcon from "../../images/skills/sass-skill.svg";
 import JsIcon from "../../images/skills/js-skill.svg";
+import ReactIcon from "../../images/skills/react-skill.svg";
 import NextBtn from "../../images/next-project.svg";
 
 export default function WeatherProject() {
   const slides = [];
 
-  for (let i = 1; i < 4; i++) {
+  for (let i = 1; i < 6; i++) {
     slides.push(
       <SwiperSlide key={`weather-slide-${i}`}>
         <img
@@ -41,13 +42,14 @@ export default function WeatherProject() {
           <div>
             <p className='project-description'>
               A weather app that fetches data from an API. By searching up a
-              city name, it will grab the latitude and longitude coordinates,
-              and from there, display the relevant data on the screen.
+              city name, it will take the user input and display that cities
+              weather information. The background will also change colour based
+              on the time.
             </p>
             <div className='projects-btn-container'>
               <a
                 className='visit-website-btn'
-                href='https://kunalp99.github.io/weather-app/'
+                href='https://kunalp99.github.io/weather-app-v2/'
                 target={"_blank"}
                 rel='noreferrer'
               >
@@ -55,7 +57,7 @@ export default function WeatherProject() {
               </a>
               <a
                 className='github-btn'
-                href='https://github.com/KunalP99/weather-app'
+                href='https://github.com/KunalP99/weather-app-v2'
                 target={"_blank"}
                 rel='noreferrer'
               >
@@ -81,6 +83,7 @@ export default function WeatherProject() {
             <img src={HtmlIcon} alt='HTML icon' />
             <img src={SassIcon} alt='Sass icon' />
             <img src={JsIcon} alt='JavaScript icon' />
+            <img src={ReactIcon} alt='React icon' />
           </div>
         </div>
       </div>

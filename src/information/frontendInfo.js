@@ -45,6 +45,7 @@ const frontendInfo = [
       html: "html.svg",
       sass: "sass.svg",
       js: "js.svg",
+      react: "react.svg",
     },
     class: "weather-app",
     filter: "frontend",
