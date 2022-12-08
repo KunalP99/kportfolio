@@ -86,7 +86,7 @@ export default function LibraryApp() {
         </div>
       </div>
       <div className='next-project-btn-container'>
-        <Link className='next-project-btn' to='/on1-project'>
+        <Link className='next-project-btn' to='/kportfolio/on1-project'>
           Next project <img src={NextBtn} alt='Next project' />
         </Link>
       </div>

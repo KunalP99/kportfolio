@@ -88,7 +88,7 @@ export default function CvBuilder() {
         </div>
       </div>
       <div className='next-project-btn-container'>
-        <Link className='next-project-btn' to='/weather-app'>
+        <Link className='next-project-btn' to='/kportfolio/shopping-cart'>
           Next project <img src={NextBtn} alt='Next project' />
         </Link>
       </div>

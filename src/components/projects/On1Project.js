@@ -82,7 +82,7 @@ export default function On1Project() {
         </div>
       </div>
       <div className='next-project-btn-container'>
-        <Link className='next-project-btn' to='/cv-builder'>
+        <Link className='next-project-btn' to='/kportfolio/cv-builder'>
           Next project <img src={NextBtn} alt='Next project' />
         </Link>
       </div>

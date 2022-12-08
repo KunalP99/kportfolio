@@ -9,7 +9,7 @@ const frontendInfo = [
     },
     class: "on1-card",
     filter: "frontend",
-    to: "/on1-project",
+    to: "/kportfolio/on1-project",
   },
   {
     title: "CV Builder",
@@ -22,21 +22,20 @@ const frontendInfo = [
     },
     class: "cv-builder-card",
     filter: "frontend",
-    to: "/cv-builder",
+    to: "/kportfolio/cv-builder",
   },
   {
-    title: "Personal Portfolio",
-    desc: "To showcase some of my work, I decided to create a portfolio using everything I have learnt so far.",
+    title: "Shopping Cart",
+    desc: "Testing my React skills, I created a shopping cart that uses React Router and had a mobile first approach when it came to styling.",
     icons: {
       html: "html.svg",
       sass: "sass.svg",
       js: "js.svg",
       react: "react.svg",
     },
-    class: "personal-portfolio-card",
+    class: "shopping-cart-card",
     filter: "frontend",
-    path: "https://github.com/KunalP99/kportfolio",
-    target: "_blank",
+    to: "/kportfolio/shopping-cart",
   },
   {
     title: "Weather App",
@@ -49,7 +48,7 @@ const frontendInfo = [
     },
     class: "weather-app",
     filter: "frontend",
-    to: "/weather-app",
+    to: "/kportfolio/weather-app",
   },
   {
     title: "Library App",
@@ -61,7 +60,7 @@ const frontendInfo = [
     },
     class: "library-app",
     filter: "frontend",
-    to: "/library-app",
+    to: "/kportfolio/library-app",
   },
 ];
 
