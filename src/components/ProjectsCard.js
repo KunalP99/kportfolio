@@ -18,28 +18,28 @@ export default function ProjectsCards(props) {
           target={props.target}
         >
           <div>
-            <p className='card-title'>{`> ${props.title}`}</p> 
+            <p className='card-title'>{`> ${props.title}`}</p>
             <p className='card-text'>{props.desc}</p>
             <div className='icons-container'>
               {props.csharp && (
                 <img
                   className='csharp-icon'
                   src={require(`../images/softwareIcons/${props.csharp}`)}
-                  alt='c# icon'
+                  alt='C# icon'
                 />
               )}
               {props.unity && (
                 <img
                   className='unity-icon'
                   src={require(`../images/softwareIcons/${props.unity}`)}
-                  alt='unity icon'
+                  alt='Unity icon'
                 />
               )}
               {props.photoshop && (
                 <img
                   className='photoshop-icon'
                   src={require(`../images/softwareIcons/${props.photoshop}`)}
-                  alt='photoshop icon'
+                  alt='Photoshop icon'
                 />
               )}
             </div>
@@ -59,32 +59,38 @@ export default function ProjectsCards(props) {
               {props.html && (
                 <img
                   src={require(`../images/softwareIcons/${props.html}`)}
-                  alt='html icon'
+                  alt='HTML icon'
                 />
               )}
               {props.css && (
                 <img
                   src={require(`../images/softwareIcons/${props.css}`)}
-                  alt='css icon'
+                  alt='CSS icon'
                 />
               )}
               {props.sass && (
                 <img
                   className='sass-icon'
                   src={require(`../images/softwareIcons/${props.sass}`)}
-                  alt='sass icon'
+                  alt='SASS icon'
                 />
               )}
               {props.js && (
                 <img
                   src={require(`../images/softwareIcons/${props.js}`)}
-                  alt='javascript icon'
+                  alt='Javascript icon'
                 />
               )}
               {props.react && (
                 <img
                   src={require(`../images/softwareIcons/${props.react}`)}
-                  alt='react icon'
+                  alt='React icon'
+                />
+              )}
+              {props.cypress && (
+                <img
+                  src={require(`../images/softwareIcons/${props.cypress}`)}
+                  alt='Cypress icon'
                 />
               )}
             </div>

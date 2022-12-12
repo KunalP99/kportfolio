@@ -34,6 +34,7 @@ export default function Projects() {
         sass={card.icons.sass}
         js={card.icons.js}
         react={card.icons.react}
+        cypress={card.icons.cypress}
         to={card.to}
         class={card.class}
       />

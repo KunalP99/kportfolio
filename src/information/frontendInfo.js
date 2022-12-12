@@ -32,6 +32,7 @@ const frontendInfo = [
       sass: "sass.svg",
       js: "js.svg",
       react: "react.svg",
+      cypress: "cypress.svg",
     },
     class: "shopping-cart-card",
     filter: "frontend",

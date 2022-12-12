@@ -8,6 +8,7 @@ import HtmlIcon from "../../images/skills/html-skill.svg";
 import SassIcon from "../../images/skills/sass-skill.svg";
 import JsIcon from "../../images/skills/js-skill.svg";
 import ReactIcon from "../../images/skills/react-skill.svg";
+import CypressIcon from "../../images/skills/cypress-skill.svg";
 import NextBtn from "../../images/next-project.svg";
 
 export default function ShoppingCart() {
@@ -86,6 +87,7 @@ export default function ShoppingCart() {
             <img src={SassIcon} alt='SASS icon' />
             <img src={JsIcon} alt='JavaScript icon' />
             <img src={ReactIcon} alt='React icon' />
+            <img src={CypressIcon} alt='Cypress icon' />
           </div>
         </div>
       </div>

@@ -463,7 +463,8 @@ button {
 .skills-container .sass-skills-icon,
 .skills-container .js-skills-icon,
 .skills-container .react-skills-icon,
-.skills-container .figma-skills-icon {
+.skills-container .figma-skills-icon,
+.skills-container .cypress-skills-icon {
   opacity: 0;
   transform: translateY(50px);
 }
@@ -490,12 +491,17 @@ button {
   transition: 1s ease-in-out;
   transition-delay: 1.25s;
 }
+.skills-container .cypress-skills-icon {
+  transition: 1s ease-in-out;
+  transition-delay: 1.5s;
+}
 .skills-container .show-html,
 .skills-container .show-css,
 .skills-container .show-sass,
 .skills-container .show-js,
 .skills-container .show-react,
-.skills-container .show-figma {
+.skills-container .show-figma,
+.skills-container .show-cypress {
   opacity: 1;
   transform: translateY(0px);
 }

@@ -6,6 +6,7 @@ import SassIcon from "../images/skills/sass-skill.svg";
 import JsIcon from "../images/skills/js-skill.svg";
 import ReactIcon from "../images/skills/react-skill.svg";
 import FigmaIcon from "../images/skills/figma-skill.svg";
+import CypressIcon from "../images/skills/cypress-skill.svg";
 
 export default function Skills() {
   const { ref: headingRef, inView: headerIsVisible } = useInView({
@@ -28,6 +29,9 @@ export default function Skills() {
     triggerOnce: true,
   });
   const { ref: figmaRef, inView: figmaIsVisible } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: cypressRef, inView: cypressIsVisible } = useInView({
     triggerOnce: true,
   });
 
@@ -87,6 +91,14 @@ export default function Skills() {
           ref={figmaRef}
           src={FigmaIcon}
           alt='Figma icon'
+        />
+        <img
+          className={`skills-icon cypress-skills-icon ${
+            cypressIsVisible ? "show-cypress" : ""
+          }`}
+          ref={cypressRef}
+          src={CypressIcon}
+          alt='Cypress icon'
         />
       </div>
     </section>

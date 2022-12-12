@@ -25,7 +25,8 @@
   .sass-skills-icon,
   .js-skills-icon,
   .react-skills-icon,
-  .figma-skills-icon {
+  .figma-skills-icon,
+  .cypress-skills-icon {
     opacity: 0;
     transform: translateY(50px);
   }
@@ -53,13 +54,18 @@
     transition: 1s ease-in-out;
     transition-delay: 1.25s;
   }
+  .cypress-skills-icon {
+    transition: 1s ease-in-out;
+    transition-delay: 1.5s;
+  }
 
   .show-html,
   .show-css,
   .show-sass,
   .show-js,
   .show-react,
-  .show-figma {
+  .show-figma,
+  .show-cypress {
     opacity: 1;
     transform: translateY(0px);
   }
