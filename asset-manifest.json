@@ -1,13 +1,17 @@
 {
   "files": {
     "main.css": "/kportfolio/static/css/main.f2afba8f.css",
-    "main.js": "/kportfolio/static/js/main.3fcf56aa.js",
+    "main.js": "/kportfolio/static/js/main.88a74010.js",
     "static/media/about-image-2.jpg": "/kportfolio/static/media/about-image-2.b5ccf37471caf20db8d9.jpg",
     "static/media/about-image-4.jpg": "/kportfolio/static/media/about-image-4.6bf001a915b9975940ee.jpg",
     "static/media/about-image-3.jpg": "/kportfolio/static/media/about-image-3.7b8fbfaef000a702da9b.jpg",
     "static/media/about-image-1.jpg": "/kportfolio/static/media/about-image-1.10669d6292763a83bb63.jpg",
+    "static/media/inventory-image-2.png": "/kportfolio/static/media/inventory-image-2.8bf0b8c41bf36a75f9eb.png",
+    "static/media/inventory-image-4.png": "/kportfolio/static/media/inventory-image-4.89de0caef79ef0b3e6ca.png",
     "static/media/cart-image-1.png": "/kportfolio/static/media/cart-image-1.58217a2cff646877d4fc.png",
+    "static/media/inventory-image-3.png": "/kportfolio/static/media/inventory-image-3.131d10d818438578de6e.png",
     "static/media/cart-image-2.png": "/kportfolio/static/media/cart-image-2.096b156d47f3b9dd8f75.png",
+    "static/media/inventory-image-1.png": "/kportfolio/static/media/inventory-image-1.2a404b2a5e8a8bf0a8fc.png",
     "static/media/on1-image-3.png": "/kportfolio/static/media/on1-image-3.7087ea2381a107a3d6eb.png",
     "static/media/on1-image-2.png": "/kportfolio/static/media/on1-image-2.9ba7064c5a5f629dc637.png",
     "static/media/on1-image-5.png": "/kportfolio/static/media/on1-image-5.9fdee6e307e59c4038bd.png",
@@ -16,7 +20,6 @@
     "static/media/cypress-skill.svg": "/kportfolio/static/media/cypress-skill.8ae155f5efba9c4fca3c2ac6f5acc5b8.svg",
     "static/media/weather-image-5.png": "/kportfolio/static/media/weather-image-5.f257feba72d93475e6ae.png",
     "static/media/weather-image-1.png": "/kportfolio/static/media/weather-image-1.7e5ae1c2d6ae50ea8149.png",
-    "static/media/library-image-3.png": "/kportfolio/static/media/library-image-3.ae35c7ab5e03ad64cbf6.png",
     "static/media/cv-image-4.png": "/kportfolio/static/media/cv-image-4.7c3e921f18582138d760.png",
     "static/media/weather-image-3.png": "/kportfolio/static/media/weather-image-3.c40617d0cd5b20bc77ca.png",
     "static/media/weather-image-4.png": "/kportfolio/static/media/weather-image-4.61e998a486f2dd0fd1f7.png",
@@ -24,8 +27,6 @@
     "static/media/cv-image-3.png": "/kportfolio/static/media/cv-image-3.6db6e4263035a34e885c.png",
     "static/media/cv-image-2.png": "/kportfolio/static/media/cv-image-2.4005dd743a9f03824629.png",
     "static/media/cv-image-1.png": "/kportfolio/static/media/cv-image-1.ae92f3ab7e593b085bab.png",
-    "static/media/library-image-1.png": "/kportfolio/static/media/library-image-1.95a76415eb28bf69dbbd.png",
-    "static/media/library-image-2.png": "/kportfolio/static/media/library-image-2.ef823cd685abaf16c977.png",
     "static/media/cart-image-3.png": "/kportfolio/static/media/cart-image-3.6abceebdf63400494dcc.png",
     "static/media/sass-skill.svg": "/kportfolio/static/media/sass-skill.4480a0606c629273f8b110568638b310.svg",
     "static/media/sass.svg": "/kportfolio/static/media/sass.60b23c2f096728f1595c.svg",
@@ -53,10 +54,10 @@
     "static/media/arrow.svg": "/kportfolio/static/media/arrow.d119920fbc6115dec91897e61cf01808.svg",
     "static/media/menu.svg": "/kportfolio/static/media/menu.88691c008b25e9240ac737ec05982e3a.svg",
     "main.f2afba8f.css.map": "/kportfolio/static/css/main.f2afba8f.css.map",
-    "main.3fcf56aa.js.map": "/kportfolio/static/js/main.3fcf56aa.js.map"
+    "main.88a74010.js.map": "/kportfolio/static/js/main.88a74010.js.map"
   },
   "entrypoints": [
     "static/css/main.f2afba8f.css",
-    "static/js/main.3fcf56aa.js"
+    "static/js/main.88a74010.js"
   ]
 }
