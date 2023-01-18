@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import On1Project from "./components/projects/On1Project";
 import CvBuilder from "./components/projects/CvBuilder";
 import WeatherProject from "./components/projects/WeatherApp";
-import LibraryApp from "./components/projects/LibraryApp";
+import InventoryManagement from "./components/projects/InventoryManagement";
 import ShoppingCart from "./components/projects/ShoppingCart";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -26,8 +26,8 @@ function App() {
             element={<WeatherProject />}
           ></Route>
           <Route
-            path='/kportfolio/library-app'
-            element={<LibraryApp />}
+            path='/kportfolio/inventory-management'
+            element={<InventoryManagement />}
           ></Route>
           <Route
             path='/kportfolio/shopping-cart'

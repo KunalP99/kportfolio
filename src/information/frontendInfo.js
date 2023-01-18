@@ -52,16 +52,17 @@ const frontendInfo = [
     to: "/kportfolio/weather-app",
   },
   {
-    title: "Library App",
-    desc: "An app that allows the user to keep track of books that they want to read or have read already.",
+    title: "Inventory Management",
+    desc: "Using ExpressJS for the backend and React for the frontend, I created an inventory management system for games.",
     icons: {
       html: "html.svg",
       css: "css.svg",
       js: "js.svg",
+      react: "react.svg",
     },
-    class: "library-app",
+    class: "inventory-management",
     filter: "frontend",
-    to: "/kportfolio/library-app",
+    to: "/kportfolio/inventory-management",
   },
 ];
 

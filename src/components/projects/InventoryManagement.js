@@ -7,17 +7,18 @@ import "swiper/css/autoplay";
 import HtmlIcon from "../../images/skills/html-skill.svg";
 import CssIcon from "../../images/skills/css-skill.svg";
 import JsIcon from "../../images/skills/js-skill.svg";
+import ReactIcon from "../../images/skills/react-skill.svg";
 import NextBtn from "../../images/next-project.svg";
 
 export default function LibraryApp() {
   const slides = [];
 
-  for (let i = 1; i < 4; i++) {
+  for (let i = 1; i < 5; i++) {
     slides.push(
-      <SwiperSlide key={`library-slide-${i}`}>
+      <SwiperSlide key={`inventory-slide-${i}`}>
         <img
           className={`slide slide-${i}`}
-          src={require(`../../images/project/library/library-image-${i}.png`)}
+          src={require(`../../images/project/inventory/inventory-image-${i}.png`)}
           alt={`Slider scene ${i}`}
         />
       </SwiperSlide>
@@ -31,24 +32,25 @@ export default function LibraryApp() {
       </h3>
       <div className='project-content'>
         <div className='project-header'>
-          <p className='project-year'>2022</p>
+          <p className='project-year'>2023</p>
           <h1 className='project-title'>
             <span className='h1-tag-text'>{`<h1>`}</span>
-            {` Library App`} <span className='h1-tag-text'>{`<`}</span>
+            {` Inventory Management`} <span className='h1-tag-text'>{`<`}</span>
             <span className='slash-sign'>{`/`}</span>
             <span span className='h1-tag-text'>{`h1>`}</span>
           </h1>
           <div>
             <p className='project-description'>
-              An app focused on keeping track of books that have been read and
-              books that the user wants to read. Basic information for the book
-              can be filled out using the form such as number of pages and
-              author. This is one of my first projects using CSS grid.
+              Using ExpressJS for the backend and React for the frontend, I
+              created an inventory management system for games. You are able to
+              add, delete, edit, and view the games all from one page. To store
+              the data, I am using MongoDB so the data will persist. This is my
+              first full-stack project.
             </p>
             <div className='projects-btn-container'>
               <a
                 className='visit-website-btn'
-                href='https://kunalp99.github.io/library/'
+                href='https://games-inventory.onrender.com/'
                 target={"_blank"}
                 rel='noreferrer'
               >
@@ -56,7 +58,7 @@ export default function LibraryApp() {
               </a>
               <a
                 className='github-btn'
-                href='https://github.com/KunalP99/library'
+                href='https://github.com/KunalP99/inventory-management'
                 target={"_blank"}
                 rel='noreferrer'
               >
@@ -82,6 +84,7 @@ export default function LibraryApp() {
             <img src={HtmlIcon} alt='HTML icon' />
             <img src={CssIcon} alt='Css icon' />
             <img src={JsIcon} alt='JavaScript icon' />
+            <img src={ReactIcon} alt='React icon' />
           </div>
         </div>
       </div>
