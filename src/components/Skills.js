@@ -9,10 +9,10 @@ import FigmaIcon from "../images/skills/figma-skill.svg";
 import CypressIcon from "../images/skills/cypress-skill.svg";
 
 export default function Skills() {
+  // References for to trigger animation once Skills section is in view
   const { ref: headingRef, inView: headerIsVisible } = useInView({
     triggerOnce: true,
   });
-
   const { ref: htmlRef, inView: htmlIsVisible } = useInView({
     triggerOnce: true,
   });

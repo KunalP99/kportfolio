@@ -4,6 +4,7 @@ import Menu from "../images/menu.svg";
 import Close from "../images/close-icon.svg";
 
 export default function Header() {
+  // Opens hamburger menu when the icon is clicked
   const openMenu = () => {
     const navbar = document.querySelector(".navbar");
     const hamburgerMenuIcon = document.querySelector(".hamburger-menu");
@@ -12,6 +13,7 @@ export default function Header() {
     hamburgerMenuIcon.style.zIndex = "-1";
   };
 
+  // Closes hamburger menu when the icon is clicked
   const closeMenu = () => {
     const navbar = document.querySelector(".navbar");
 

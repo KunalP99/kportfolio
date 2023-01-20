@@ -7,6 +7,7 @@ export default function Quote() {
   const [quote, setQuote] = useState({});
 
   useEffect(() => {
+    // Fetches quote from API to display an initial quote
     fetch("https://api.quotable.io/random")
       .then((response) => response.json())
       .then((data) => setQuote(data))

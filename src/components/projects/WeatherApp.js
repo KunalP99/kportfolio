@@ -13,6 +13,7 @@ import NextBtn from "../../images/next-project.svg";
 export default function WeatherProject() {
   const slides = [];
 
+  // Pushes a new SwiperSlide component into the array to display in the DOM
   for (let i = 1; i < 6; i++) {
     slides.push(
       <SwiperSlide key={`weather-slide-${i}`}>
